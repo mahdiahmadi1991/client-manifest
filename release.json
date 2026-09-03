@@ -1,0 +1,49 @@
+{
+  "channel": "production",
+  "notes": [
+    {
+      "lines": [
+        "When a new version is waiting, the About page now offers to install it, rather than only telling you it is there."
+      ],
+      "release": "2.3.0"
+    },
+    {
+      "lines": [
+        "Closing Prop Hedge Reports from the tray now says so on the page, instead of leaving a tab that quietly stops keeping up.",
+        "You can leave that tab open. Start the app again and the page comes back on its own, where you left it."
+      ],
+      "release": "2.2.0"
+    },
+    {
+      "lines": [
+        "A new version now announces itself at the bottom of the sidebar. Clicking it shows you what changed before anything is installed.",
+        "You can also look for a new version yourself, from the About page, rather than waiting for the daily check."
+      ],
+      "release": "2.1.0"
+    },
+    {
+      "lines": [
+        "The first time you open Prop Hedge Reports after installing it, it now starts in a few seconds rather than the best part of a minute.",
+        "Opening the calculator before you have added a terminal now tells you what it needs, instead of sitting on a loading screen that never finishes."
+      ],
+      "release": "2.0.1"
+    },
+    {
+      "lines": [
+        "The hedge ratio the calculator suggests now comes from the plan and stage your account is on, rather than from one setting shared by every account. A first challenge and a funded account no longer have to use the same number. The three ratio settings you used to fill in by hand are gone, and anything you had saved in them does not carry over.",
+        "Each firm's published plans and prices are kept in the application's own records instead of being fixed inside the software, so when a firm changes its terms you no longer wait for a new version.",
+        "Prop Hedge Reports keeps itself up to date. A new version downloads quietly in the background, and one click installs it while the page you are reading stays open and comes back where you left it. If you never get round to clicking, it installs the next time you start the application.",
+        "Your records are copied before an update installs, and the last three copies are kept.",
+        "Starting Prop Hedge Reports while it is already running opens your reports instead of doing nothing."
+      ],
+      "release": "2.0.0"
+    }
+  ],
+  "payload_version": 1,
+  "published_at": "2026-09-03T12:58:07.515602Z",
+  "release": "2.3.0",
+  "sha256": "08b2a93e9b9da4008dc41b79ff1d1c1a9406729843d670846f986faa60824a44",
+  "signature": "qRaFRxl1li-smXEOgBucVMJEycGpExv4n3OcDypaChAnqB9Jm7hJNOvpaYtBqNtWd7Lrzd1lFZ8KrkUehBT3BA",
+  "size": 70930623,
+  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.3.0/PropHedgeReports-Setup.exe"
+}
