@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "The first time you open Prop Hedge Reports after installing it, it now starts in a few seconds rather than the best part of a minute.",
+        "Opening the calculator before you have added a terminal now tells you what it needs, instead of sitting on a loading screen that never finishes."
+      ],
+      "release": "2.0.1"
+    },
+    {
+      "lines": [
         "The hedge ratio the calculator suggests now comes from the plan and stage your account is on, rather than from one setting shared by every account. A first challenge and a funded account no longer have to use the same number. The three ratio settings you used to fill in by hand are gone, and anything you had saved in them does not carry over.",
         "Each firm's published plans and prices are kept in the application's own records instead of being fixed inside the software, so when a firm changes its terms you no longer wait for a new version.",
         "Prop Hedge Reports keeps itself up to date. A new version downloads quietly in the background, and one click installs it while the page you are reading stays open and comes back where you left it. If you never get round to clicking, it installs the next time you start the application.",
@@ -13,10 +20,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-03T02:43:27.285133Z",
-  "release": "2.0.0",
-  "sha256": "78ee0453cc765d90e57b4df8b9c25190da02d46a61ff0a8ca28c278d88037a69",
-  "signature": "PlESJMfHjdVJWKZeoNEX9dw5a8FcRg41BagAaRMyDP6Efp4XaFBedznI4463QvidG2SV8qLnz2eB_FNBOMMbAg",
-  "size": 70902152,
-  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.0.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-03T03:21:35.577774Z",
+  "release": "2.0.1",
+  "sha256": "f31451cec8e4f9af3b1f074c642b2a8d72b5c9a96c62876c61eb3e45efe96196",
+  "signature": "q4-9oiS_QJ1BHbpYU2BWtGw_yP6teCppuL4b4VwxD-VBH4Ty9q_vfhn-RZ9u09bvZSTf0WlXgRrgn3gS1A8UAA",
+  "size": 70944697,
+  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.0.1/PropHedgeReports-Test-Setup.exe"
 }
