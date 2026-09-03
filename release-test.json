@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "A new version now announces itself at the bottom of the sidebar. Clicking it shows you what changed before anything is installed.",
+        "You can also look for a new version yourself, from the About page, rather than waiting for the daily check."
+      ],
+      "release": "2.1.0"
+    },
+    {
+      "lines": [
         "The first time you open Prop Hedge Reports after installing it, it now starts in a few seconds rather than the best part of a minute.",
         "Opening the calculator before you have added a terminal now tells you what it needs, instead of sitting on a loading screen that never finishes."
       ],
@@ -20,10 +27,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-03T03:21:35.577774Z",
-  "release": "2.0.1",
-  "sha256": "f31451cec8e4f9af3b1f074c642b2a8d72b5c9a96c62876c61eb3e45efe96196",
-  "signature": "q4-9oiS_QJ1BHbpYU2BWtGw_yP6teCppuL4b4VwxD-VBH4Ty9q_vfhn-RZ9u09bvZSTf0WlXgRrgn3gS1A8UAA",
-  "size": 70944697,
-  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.0.1/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-03T04:29:58.542504Z",
+  "release": "2.1.0",
+  "sha256": "287beba4601700c28e37af369016da9b3bd9f77f97718ff790faafa89c7a13b2",
+  "signature": "Mi-SQiYNmm6elVC08ZJHk8xFXlcHuJlUSs4V_ycevn4iUWhJS5dL8m59o1jvwB6aaxFpy-YF_K0DkUMcOkgZBg",
+  "size": 70943059,
+  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.1.0/PropHedgeReports-Test-Setup.exe"
 }
