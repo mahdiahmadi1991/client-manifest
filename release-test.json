@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "Closing Prop Hedge Reports from the tray now says so on the page, instead of leaving a tab that quietly stops keeping up.",
+        "You can leave that tab open. Start the app again and the page comes back on its own, where you left it."
+      ],
+      "release": "2.2.0"
+    },
+    {
+      "lines": [
         "A new version now announces itself at the bottom of the sidebar. Clicking it shows you what changed before anything is installed.",
         "You can also look for a new version yourself, from the About page, rather than waiting for the daily check."
       ],
@@ -27,10 +34,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-03T04:29:58.542504Z",
-  "release": "2.1.0",
-  "sha256": "287beba4601700c28e37af369016da9b3bd9f77f97718ff790faafa89c7a13b2",
-  "signature": "Mi-SQiYNmm6elVC08ZJHk8xFXlcHuJlUSs4V_ycevn4iUWhJS5dL8m59o1jvwB6aaxFpy-YF_K0DkUMcOkgZBg",
-  "size": 70943059,
-  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.1.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-03T05:24:39.137406Z",
+  "release": "2.2.0",
+  "sha256": "73bf1ea98881654576fe7fe2673c56b9c6a7d0d62b67e06fb3717e42efd6dcd1",
+  "signature": "5X1cWEBVnk2hHNB67lkro-8Fg384cTkAnHBwNeUIg2BibWu7_a8vui63o0-N68cRGfCIwzuZWF9lBJyIJeaKAA",
+  "size": 70950185,
+  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.2.0/PropHedgeReports-Test-Setup.exe"
 }
