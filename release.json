@@ -40,10 +40,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-03T12:58:07.515602Z",
+  "published_at": "2026-09-03T13:45:15.795763Z",
   "release": "2.3.0",
   "sha256": "08b2a93e9b9da4008dc41b79ff1d1c1a9406729843d670846f986faa60824a44",
-  "signature": "qRaFRxl1li-smXEOgBucVMJEycGpExv4n3OcDypaChAnqB9Jm7hJNOvpaYtBqNtWd7Lrzd1lFZ8KrkUehBT3BA",
+  "signature": "0JDlV66IhTBvgm76H-l3Ey35Tag2ZbjBsX9yWVweGNeqcx_KKN97g3soubUdUgA1toYkNNpcdsnSj2rTfgAMCg",
   "size": 70930623,
-  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.3.0/PropHedgeReports-Setup.exe"
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.3.0/PropHedgeReports-Setup.exe"
 }
