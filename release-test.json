@@ -1,0 +1,22 @@
+{
+  "channel": "test",
+  "notes": [
+    {
+      "lines": [
+        "The hedge ratio the calculator suggests now comes from the plan and stage your account is on, rather than from one setting shared by every account. A first challenge and a funded account no longer have to use the same number. The three ratio settings you used to fill in by hand are gone, and anything you had saved in them does not carry over.",
+        "Each firm's published plans and prices are kept in the application's own records instead of being fixed inside the software, so when a firm changes its terms you no longer wait for a new version.",
+        "Prop Hedge Reports keeps itself up to date. A new version downloads quietly in the background, and one click installs it while the page you are reading stays open and comes back where you left it. If you never get round to clicking, it installs the next time you start the application.",
+        "Your records are copied before an update installs, and the last three copies are kept.",
+        "Starting Prop Hedge Reports while it is already running opens your reports instead of doing nothing."
+      ],
+      "release": "2.0.0"
+    }
+  ],
+  "payload_version": 1,
+  "published_at": "2026-09-03T02:43:27.285133Z",
+  "release": "2.0.0",
+  "sha256": "78ee0453cc765d90e57b4df8b9c25190da02d46a61ff0a8ca28c278d88037a69",
+  "signature": "PlESJMfHjdVJWKZeoNEX9dw5a8FcRg41BagAaRMyDP6Efp4XaFBedznI4463QvidG2SV8qLnz2eB_FNBOMMbAg",
+  "size": 70902152,
+  "url": "https://github.com/AlynGo-Org/prop-hedge-reports/releases/download/v2.0.0/PropHedgeReports-Test-Setup.exe"
+}
