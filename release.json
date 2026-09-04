@@ -3,6 +3,16 @@
   "notes": [
     {
       "lines": [
+        "Every account now says whether you may still trade in it. The one your plan is running on is marked, and so are the ones that have passed or been lost.",
+        "Prop and broker accounts are told apart at a glance rather than by reading the word.",
+        "Reading the terminals now has its own small control inside the status pill at the top, so the bar that sat above the reports is gone. Export moved up beside the page title.",
+        "The button on an account that belongs to no plan used to do nothing at all. It now takes you to the form, and says what it does.",
+        "A challenge stage looks the same wherever it appears. In the calculator, the account you had chosen showed its stage in the wrong stage's colour."
+      ],
+      "release": "2.4.0"
+    },
+    {
+      "lines": [
         "When a new version is waiting, the About page now offers to install it, rather than only telling you it is there."
       ],
       "release": "2.3.0"
@@ -40,10 +50,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-03T13:45:15.795763Z",
-  "release": "2.3.0",
-  "sha256": "08b2a93e9b9da4008dc41b79ff1d1c1a9406729843d670846f986faa60824a44",
-  "signature": "0JDlV66IhTBvgm76H-l3Ey35Tag2ZbjBsX9yWVweGNeqcx_KKN97g3soubUdUgA1toYkNNpcdsnSj2rTfgAMCg",
-  "size": 70930623,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.3.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-04T11:23:38.098683Z",
+  "release": "2.4.0",
+  "sha256": "d6a92fb45d5d9e955aca562caaab89e918f63b1ff1bdfafba1ba2d40fb031c94",
+  "signature": "8kWyKsrvbPjxmI0OWXIPx81P8N04MapgcmHKTHzvXXICxqJ_kHTz9xyM_d08WM-iuyMBnrzqi_xSr6t7JipPCQ",
+  "size": 70920491,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.4.0/PropHedgeReports-Setup.exe"
 }
