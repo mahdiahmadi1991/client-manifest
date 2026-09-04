@@ -3,6 +3,22 @@
   "notes": [
     {
       "lines": [
+        "Hedges are found wherever both their legs are stored, not only where a terminal happened to be pointed when they arrived. On a month of real trading that is the difference between finding a third of them and finding almost all.",
+        "Recording a pairing, declaring a trade as your own, accepting a hedge and confirming what a server is now take under a second. They used to take twenty to thirty, because each one opened MetaTrader for no reason.",
+        "A plan now shows what it has actually been worth: the price together with the broker money its hedges earned. It reads as the chain it is, from what you bought through every account it gained, and the Plans page charts them all side by side. Finished plans fold up.",
+        "The application works out for itself what happened to a challenge account. When the firm withdraws its right to trade, reaching the target passes the plan and crossing a drawdown floor closes it, named after the floor. You are asked only when the account is gone and none of its own figures explains why.",
+        "The daily drawdown floor is now drawn on the challenge chart, day by day, with the day an account went through it marked. It is rebuilt from your own trades, so it is there for accounts the application was never watching.",
+        "Each account shows one gauge, running from the floor that loses it to the target that passes it, instead of two bars that could not be read together.",
+        "When a new account appears on a terminal, the application says so wherever you are and asks the one thing it cannot work out: what the server is, or which plan the account came from.",
+        "Installing an update shows what it is doing from the moment you press the button until the application comes back. Before this the window simply closed and nothing happened until it was over.",
+        "Messages appear as cards under the header rather than a line of grey text, and anything refused stays on screen until you have read it.",
+        "Pairing a leg by hand is a clearer screen. The trade you are answering reads as one line, the closest candidate is already chosen, and you can see what the pairing would make before you record it.",
+        "The calculator no longer gets stuck when it is remembering an account you have since removed, and no longer blinks every time the terminals are read."
+      ],
+      "release": "2.5.0"
+    },
+    {
+      "lines": [
         "Every account now says whether you may still trade in it. The one your plan is running on is marked, and so are the ones that have passed or been lost.",
         "Prop and broker accounts are told apart at a glance rather than by reading the word.",
         "Reading the terminals now has its own small control inside the status pill at the top, so the bar that sat above the reports is gone. Export moved up beside the page title.",
@@ -50,10 +66,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-04T11:16:44.342740Z",
-  "release": "2.4.0",
-  "sha256": "2f53e22bf34bf28df0e3dda08e979f9435b2c7a7485b91fb36fcd91b689be9e8",
-  "signature": "xFCpECsGPVlgRBlbvxwQJ4DHc4u6p9OdpnCq4UJb6Tl0Ltq6L3lSLy_4ybyT7Pksl_lx6GL01ylFP3TKn_IICg",
-  "size": 70938192,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.4.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-04T18:14:38.637248Z",
+  "release": "2.5.0",
+  "sha256": "00664c09c8b49cf1e04888509661ec0b2662afdd218050ea661bb9d6bb2747ed",
+  "signature": "AOsDMVQOhgv_y4X-LIor_nHybIGJertWgffwJz0EXM4UDJEGWzJoWexoewBRpG6MR5pmR34uqX3G0qJBxRTUAQ",
+  "size": 70988945,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.5.0/PropHedgeReports-Test-Setup.exe"
 }
