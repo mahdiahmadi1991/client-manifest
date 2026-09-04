@@ -3,6 +3,19 @@
   "notes": [
     {
       "lines": [
+        "Several figures were being worked out wrongly and are corrected, so some numbers will read differently after this update. What each of them was doing is below.",
+        "Broker trading that answered no hedge was counting your hedged legs a second time. It read as a profit where the truth was a loss.",
+        "The spread your fills paid is now shown. It disappeared whenever a single operation was missing its quotes, and spread usually costs several times the commission.",
+        "A hedge that raised a question you had not answered kept its money out of your plans and your accounts until you accepted it. Both its legs were closed and the money was already yours, so it counts. The question stays on the row where you can read it.",
+        "The positions listed as having no counterpart on the Sources page counted trades that had been hedged all along.",
+        "A challenge account you have not put in a plan no longer has its chart drawn from zero, which showed the balance the firm opened it at as profit.",
+        "When your firm hands over the next account before it closes the one that passed, you can now record it against the plan it came from. There was no way to do that: the plan was still running, so nothing offered it, and recording a new purchase would have charged you a second fee and started the account over at the first stage. Every open plan is offered now, and one that is still running says which account joining it will mark as passed.",
+        "Each terminal lists the accounts it holds, not only the one it is logged into, and says which of them have never been read. Log into one and it is read on the next cycle. The page also loads about twice as fast."
+      ],
+      "release": "2.6.0"
+    },
+    {
+      "lines": [
         "Hedges are found wherever both their legs are stored, not only where a terminal happened to be pointed when they arrived. On a month of real trading that is the difference between finding a third of them and finding almost all.",
         "Recording a pairing, declaring a trade as your own, accepting a hedge and confirming what a server is now take under a second. They used to take twenty to thirty, because each one opened MetaTrader for no reason.",
         "A plan now shows what it has actually been worth: the price together with the broker money its hedges earned. It reads as the chain it is, from what you bought through every account it gained, and the Plans page charts them all side by side. Finished plans fold up.",
@@ -66,10 +79,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-04T18:22:10.057686Z",
-  "release": "2.5.0",
-  "sha256": "34151164b54343f2635904c57a172cfc13448b277a5a0c28a4d522706fb509a4",
-  "signature": "yT0hb09CJgFYRVgnH_k9ZRc8RhwIuNen0JXsDyKoukx7x1WXRrcxmOlftddF_iYFXfiu9uaCgiRLkpwzjtbNAw",
-  "size": 70966730,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.5.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-04T23:31:32.697858Z",
+  "release": "2.6.0",
+  "sha256": "3c91d9d29749f8f06472be977bd768f5efe4cdcaa1415b4231c02eeb019a5412",
+  "signature": "ldSo03aJROl59xLER2mwDoZrHBmTy-s_f-MAB7YRCHY8zS8oubr6uExNbuCEvs5JB4hVlJzkmqSjn95ZiUOnBg",
+  "size": 70977834,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.6.0/PropHedgeReports-Setup.exe"
 }
