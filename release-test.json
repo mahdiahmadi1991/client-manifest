@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "Wherever an account appears it now names the plan it came from, and that name takes you to the plan. Six accounts of one firm used to be six identical rows, and which purchase each came from was on no screen.",
+        "When the application updates while you have a window of it open, that window says so and offers to reload. The message was there before, but only a corner of it reached the screen and the button was off the edge."
+      ],
+      "release": "2.7.0"
+    },
+    {
+      "lines": [
         "Several figures were being worked out wrongly and are corrected, so some numbers will read differently after this update. What each of them was doing is below.",
         "Broker trading that answered no hedge was counting your hedged legs a second time. It read as a profit where the truth was a loss.",
         "The spread your fills paid is now shown. It disappeared whenever a single operation was missing its quotes, and spread usually costs several times the commission.",
@@ -79,10 +86,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-04T23:23:43.184114Z",
-  "release": "2.6.0",
-  "sha256": "2bf0ae336d94f22a9e0a8ab8fe85d80da196603a7b44818e7dcde19239d908dc",
-  "signature": "M_iG9XLPcuDYj1gPR5kf1Qcwr6C7tm6m8ZL2orHuKRHlypgwnhuD75_idYlzp6Zxx8OkoR9QonWqLnm9j6vCAg",
-  "size": 70988379,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.6.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-05T08:46:17.874758Z",
+  "release": "2.7.0",
+  "sha256": "6f9500f10ce46a81ffa855346e1dfb50c4174984021675eb17db018f8f8b0524",
+  "signature": "rsRnUNlFMvTkmoqEjb_YcOESTYlepM3jI6_N8wGa6ozzll8eQbYM50PVuDuzXJBFpn6VOMHaXJELuwHj7xFmAQ",
+  "size": 70994094,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.7.0/PropHedgeReports-Test-Setup.exe"
 }
