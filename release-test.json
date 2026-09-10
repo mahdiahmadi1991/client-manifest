@@ -3,6 +3,12 @@
   "notes": [
     {
       "lines": [
+        "The Overview page appears straight away again. It was taking the better part of a minute, because drawing it once meant working out one account's day-by-day balance history a hundred times over. It is worked out once now. Nothing about the figures has changed."
+      ],
+      "release": "2.8.1"
+    },
+    {
+      "lines": [
         "**You can now place a hedge from the calculator.** Size it as before, then Arm and Fire, one button with a second between them. Both legs go to the two terminals you chose, each with its stop and its target on the broker's own server, and the application carries the pair to the end: if one leg is taken by the market it closes the other, and if you move a stop by hand on one leg the other follows. A line under the header follows the hedge while it is in the market, and you can close both legs from the page.",
         "**Each terminal on Sources gains a choice of how it may be driven**, and says in plain words what it still needs before an order can go. Nothing is sent to a terminal you have not chosen a route for.",
         "**Set this terminal up.** One press attaches the expert, turns on Algo Trading and turns on One Click Trading, and the terminal comes back ready in about twenty seconds. It lists everything it will do before it does any of it, and it never types into a login window. The same button starts a terminal you have closed, and offers to update the expert in one running an older version.",
@@ -94,23 +100,13 @@
         "Opening the calculator before you have added a terminal now tells you what it needs, instead of sitting on a loading screen that never finishes."
       ],
       "release": "2.0.1"
-    },
-    {
-      "lines": [
-        "The hedge ratio the calculator suggests now comes from the plan and stage your account is on, rather than from one setting shared by every account. A first challenge and a funded account no longer have to use the same number. The three ratio settings you used to fill in by hand are gone, and anything you had saved in them does not carry over.",
-        "Each firm's published plans and prices are kept in the application's own records instead of being fixed inside the software, so when a firm changes its terms you no longer wait for a new version.",
-        "Prop Hedge Reports keeps itself up to date. A new version downloads quietly in the background, and one click installs it while the page you are reading stays open and comes back where you left it. If you never get round to clicking, it installs the next time you start the application.",
-        "Your records are copied before an update installs, and the last three copies are kept.",
-        "Starting Prop Hedge Reports while it is already running opens your reports instead of doing nothing."
-      ],
-      "release": "2.0.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-10T20:47:26.489404Z",
-  "release": "2.8.0",
-  "sha256": "2cfaf8b9c5a128766105e53c63a31ed8d2135feac03105962dd1d6edb84197ea",
-  "signature": "Lm_dbvOUhAasrV5-DsurRDQ6dqWY52HLr3tAxqVgwrL6jb_rHdrl8PH_J56M2yPzLjE6E9U6qwpwuU11fk7RDQ",
-  "size": 78052500,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-10T22:32:05.287500Z",
+  "release": "2.8.1",
+  "sha256": "3eb416f40f3da54660ba788c736cb05d777d2c02f894ea7009aa5279010b809e",
+  "signature": "ubGZL3gmU2oyu1ekVCP1ojbvcItaMXumAQcmelCewbn5AVkiV-hSgcz6sth4Hs3CWHIQKX6ixH9Lp8imRk3YDw",
+  "size": 78078580,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.1/PropHedgeReports-Test-Setup.exe"
 }
