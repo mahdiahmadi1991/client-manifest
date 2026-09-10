@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "Updating no longer closes the application and leaves it closed. Pressing Update shut the application down to make way for the installer, then stopped the installer along with it, so nothing was installed and nothing came back. If your copy has been sitting on an older version since the last time you tried to update, that is why.",
+        "The Overview page settles instead of working itself out over and over. Each time the application looked at your terminals, it told every open tab that the figures had moved, whether any of them had or not. So the page spent its time doing the sums again rather than showing them to you, and it got slower the more tabs you had open."
+      ],
+      "release": "2.8.2"
+    },
+    {
+      "lines": [
         "The Overview page appears straight away again. It was taking the better part of a minute, because drawing it once meant working out one account's day-by-day balance history a hundred times over. It is worked out once now. Nothing about the figures has changed."
       ],
       "release": "2.8.1"
@@ -93,20 +100,13 @@
         "You can also look for a new version yourself, from the About page, rather than waiting for the daily check."
       ],
       "release": "2.1.0"
-    },
-    {
-      "lines": [
-        "The first time you open Prop Hedge Reports after installing it, it now starts in a few seconds rather than the best part of a minute.",
-        "Opening the calculator before you have added a terminal now tells you what it needs, instead of sitting on a loading screen that never finishes."
-      ],
-      "release": "2.0.1"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-10T22:32:05.287500Z",
-  "release": "2.8.1",
-  "sha256": "3eb416f40f3da54660ba788c736cb05d777d2c02f894ea7009aa5279010b809e",
-  "signature": "ubGZL3gmU2oyu1ekVCP1ojbvcItaMXumAQcmelCewbn5AVkiV-hSgcz6sth4Hs3CWHIQKX6ixH9Lp8imRk3YDw",
-  "size": 78078580,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.1/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-10T23:20:10.394808Z",
+  "release": "2.8.2",
+  "sha256": "8c9623aabe7712e7aa0ae7e38e2a76102c77dfbf64b6172838137c3d927a8b75",
+  "signature": "LISyAiywRCWtyQTfb4IgmRjVZoM9LYQe3IZkW-1RZSpOctkpUJYPQ2Wdk13H8BfrXRVJe8v8Dqhttf--GZndDQ",
+  "size": 78079367,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.2/PropHedgeReports-Test-Setup.exe"
 }
