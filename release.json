@@ -3,6 +3,27 @@
   "notes": [
     {
       "lines": [
+        "**You can now place a hedge from the calculator.** Size it as before, then Arm and Fire, one button with a second between them. Both legs go to the two terminals you chose, each with its stop and its target on the broker's own server, and the application carries the pair to the end: if one leg is taken by the market it closes the other, and if you move a stop by hand on one leg the other follows. A line under the header follows the hedge while it is in the market, and you can close both legs from the page.",
+        "**Each terminal on Sources gains a choice of how it may be driven**, and says in plain words what it still needs before an order can go. Nothing is sent to a terminal you have not chosen a route for.",
+        "**Set this terminal up.** One press attaches the expert, turns on Algo Trading and turns on One Click Trading, and the terminal comes back ready in about twenty seconds. It lists everything it will do before it does any of it, and it never types into a login window. The same button starts a terminal you have closed, and offers to update the expert in one running an older version.",
+        "**The expert the application installs is a trading desk of its own.** Open at market or rest an order on a line you drag, with the stop and target placed for you; two chains of positions side by side, each with one stop and one target you drag on the chart; break even, risk free and save profit as buttons or as lines you set in advance; keyboard shortcuts; and limits on spread, size, margin and the day's loss. Five colour schemes, and a separate choice for each terminal. It leaves your chart exactly as it found it.",
+        "**The plan you arm is drawn on your prop chart** before anything is placed, with the risk and the reward shaded, and you can drag its entry line to move the whole plan without arming again.",
+        "**A position you open on the prop terminal yourself can be hedged for you.** Off by default. Turn it on and the matching leg goes to your broker at the ratio the calculator suggests, and the pair is carried like any other. What you already had open stays your own.",
+        "**You can hedge any instrument your brokers offer.** The application no longer has to have heard of it: it reads your Market Watch, and two brokers spelling one instrument differently are matched wherever the spelling allows. Where it cannot tell, it asks you once.",
+        "**Sources can make you a second terminal**, copied from one you already have, with a shortcut that starts it separately. It carries no account, no history and no saved login.",
+        "**Recording a plan now asks for the account the firm handed you**, and refuses one that was not opened at the plan's size. A plan nothing has happened under can be deleted rather than closed.",
+        "**A trade you place appears here in about a second** instead of up to half a minute, and the terminals page loads about twice as fast.",
+        "**Settings you change now take effect straight away.** How often the terminals are read, the quote windows, the clock drift limit and the history lookback were being saved and shown back to you without being used. Six more numbers are yours to set, and a new Execution tab holds every dial for driving a terminal.",
+        "Some figures were being worked out wrongly and are corrected, so a few numbers will read differently after this update. What execution costs is now measured on the instrument you are sizing rather than pooled across everything the account has traded, which was overstating a gold hedge by about thirty times. A plan's account no longer reports its whole drawdown allowance as spent because the application read it before the firm's money arrived.",
+        "Arming refuses, with the reason and what to do about it, when a leg has no stop, when a stop is on the wrong side of its entry, when the two legs face the same way, when the market has already moved past the plan, when the account is not the one a plan is running on, and when the position that opened is not the one that was ordered.",
+        "A window you have open in your terminal is never closed by the application. If one is open when a hedge is armed, it says which window it is and does nothing.",
+        "If the application stops while a hedge is being placed, it works out what actually reached the market when it comes back, rather than leaving that account unable to hedge again.",
+        "Closing a hedge no longer reports that the terminal refused when it did the work, and a hedge left armed on a driven terminal withdraws itself after half an hour and frees the account. You can change that time, or switch it off, under Settings, Execution."
+      ],
+      "release": "2.8.0"
+    },
+    {
+      "lines": [
         "Wherever an account appears it now names the plan it came from, and that name takes you to the plan. Six accounts of one firm used to be six identical rows, and which purchase each came from was on no screen.",
         "When the application updates while you have a window of it open, that window says so and offers to reload. The message was there before, but only a corner of it reached the screen and the button was off the edge."
       ],
@@ -86,10 +107,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-05T08:52:28.664319Z",
-  "release": "2.7.0",
-  "sha256": "44517c2f42b1e5bbb1368415018e01ccfacc91c9fcb0b16382ef73de0914ca01",
-  "signature": "UFzjrPjcwp7GB5Gix6Bin_gIkwsZ__9m6BgNwErAn_MnZWLzzmoH5ixSTxIJm2U8QPU51cGWQWNIj0inqyg7CA",
-  "size": 70978208,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.7.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-10T20:54:11.256613Z",
+  "release": "2.8.0",
+  "sha256": "0544f97953b07ecf9d45827bbdfe190ab1f83d404d4e371249aeb960250aa9e9",
+  "signature": "BXuYo37dhVnhMrFmzzsWx-7JLCoDkUSfI19XOCKuyfVmj7LQ_uRgstcmXK0746cyM_Wzb5ZVEPlsy1h6YexCDg",
+  "size": 78042603,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.0/PropHedgeReports-Setup.exe"
 }
