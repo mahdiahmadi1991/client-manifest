@@ -107,10 +107,10 @@
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-10T20:32:56.350255Z",
+  "published_at": "2026-09-10T20:47:26.489404Z",
   "release": "2.8.0",
-  "sha256": "7afb69d4dc6ebbbe34f38cab5eb5d1ec7b7d40e7bc71b0f4ff3df36e782ad30b",
-  "signature": "-MgmU610wBo_6YW7G3CLbBtkveLDnQgEvc9xZV9TB450TE5lLvMNsKtUu-SeEiVBr9qJ8i75Cx8WHrnSPZ40Ag",
-  "size": 78055718,
+  "sha256": "2cfaf8b9c5a128766105e53c63a31ed8d2135feac03105962dd1d6edb84197ea",
+  "signature": "Lm_dbvOUhAasrV5-DsurRDQ6dqWY52HLr3tAxqVgwrL6jb_rHdrl8PH_J56M2yPzLjE6E9U6qwpwuU11fk7RDQ",
+  "size": 78052500,
   "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.0/PropHedgeReports-Test-Setup.exe"
 }
