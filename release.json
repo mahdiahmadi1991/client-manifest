@@ -3,6 +3,14 @@
   "notes": [
     {
       "lines": [
+        "**Uninstalling can no longer take your records without asking.** It has always offered to delete them and kept them unless you said otherwise, but an uninstall started from a command line met that question with nobody there to answer it. It now keeps everything in that case. Removing a test build can never touch the records of the ordinary one, whichever way it is removed.",
+        "**A failed update keeps its own explanation.** The installer's log is what the update window offers to copy and send on, and the next check for a new version was tidying it away within the hour.",
+        "**What is new in a release now reads as it was written**, with each item's opening line standing out, instead of arriving as one block of plain text."
+      ],
+      "release": "2.10.0"
+    },
+    {
+      "lines": [
         "**The application opens again.** Version 2.8.5 went out without its screens. It started, read your terminals and kept your record safe, but showed an empty window. Nothing in your record was affected, and this release puts the screens back.",
         "**You can correct a hedge the application paired for you.** Open it and press Correct the legs to say which broker tickets really answered that trade: swap one for another, add a ticket you opened later to top the leg up, or drop one you closed and replaced. A ticket you take out is counted as your own trading instead, so nothing goes missing from your figures. Undo my correction hands the hedge back at any time.",
         "**Updating happens in one window, and tells you how it went.** It lists what is new, shows the install while it runs, and says plainly if it did not work: what went wrong, what the installer itself wrote, and a button that copies all of it so you can send it on. A failed update changes nothing on your computer and you carry straight on with the version you were already using.",
@@ -84,29 +92,13 @@
         "Each terminal lists the accounts it holds, not only the one it is logged into, and says which of them have never been read. Log into one and it is read on the next cycle. The page also loads about twice as fast."
       ],
       "release": "2.6.0"
-    },
-    {
-      "lines": [
-        "Hedges are found wherever both their legs are stored, not only where a terminal happened to be pointed when they arrived. On a month of real trading that is the difference between finding a third of them and finding almost all.",
-        "Recording a pairing, declaring a trade as your own, accepting a hedge and confirming what a server is now take under a second. They used to take twenty to thirty, because each one opened MetaTrader for no reason.",
-        "A plan now shows what it has actually been worth: the price together with the broker money its hedges earned. It reads as the chain it is, from what you bought through every account it gained, and the Plans page charts them all side by side. Finished plans fold up.",
-        "The application works out for itself what happened to a challenge account. When the firm withdraws its right to trade, reaching the target passes the plan and crossing a drawdown floor closes it, named after the floor. You are asked only when the account is gone and none of its own figures explains why.",
-        "The daily drawdown floor is now drawn on the challenge chart, day by day, with the day an account went through it marked. It is rebuilt from your own trades, so it is there for accounts the application was never watching.",
-        "Each account shows one gauge, running from the floor that loses it to the target that passes it, instead of two bars that could not be read together.",
-        "When a new account appears on a terminal, the application says so wherever you are and asks the one thing it cannot work out: what the server is, or which plan the account came from.",
-        "Installing an update shows what it is doing from the moment you press the button until the application comes back. Before this the window simply closed and nothing happened until it was over.",
-        "Messages appear as cards under the header rather than a line of grey text, and anything refused stays on screen until you have read it.",
-        "Pairing a leg by hand is a clearer screen. The trade you are answering reads as one line, the closest candidate is already chosen, and you can see what the pairing would make before you record it.",
-        "The calculator no longer gets stuck when it is remembering an account you have since removed, and no longer blinks every time the terminals are read."
-      ],
-      "release": "2.5.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T14:40:25.380675Z",
-  "release": "2.9.0",
-  "sha256": "9658fff4b4cb9bd6deb6dc24900549d2e9c91ce7a9147c2de0d691db5ff9dfeb",
-  "signature": "f58dqgublPH4gPvxo22YVM3rXi_-K9a2CmiXhlx2nZm2_0bgh8kww5BOviGWx2HeKIALx_ZtOEIDjoq5-jStBg",
-  "size": 102851264,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.9.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-11T17:39:18.560157Z",
+  "release": "2.10.0",
+  "sha256": "f9fefcaedf000256bd116c503c479ae463e19d09031fdd3d575da1d479d8553e",
+  "signature": "aUAqrndworoLdserRhxLTbGBHjVda1UBxadVf821AG9RZ95tDTqYI-de716a628BK2hTmVEYZvjA7T-TsxlHCA",
+  "size": 102851331,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.0/PropHedgeReports-Setup.exe"
 }
