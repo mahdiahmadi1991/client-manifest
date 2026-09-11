@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "The Overview page arrives in about a second. The last two releases each took a piece out of this; what was left was the page adding up the same account totals sixteen times over to draw itself once.",
+        "The question about a newly arrived account no longer holds the rest of the application shut. It covers the screen on purpose, because who runs an account decides whether its balance is the firm's money or yours, but until now every click behind it did nothing at all and said nothing either, which looked like the application had stopped working. Click away from it, or press Later, and it steps aside. Neither answers it: the question comes back the next time your terminals are read."
+      ],
+      "release": "2.8.3"
+    },
+    {
+      "lines": [
         "Updating no longer closes the application and leaves it closed. Pressing Update shut the application down to make way for the installer, then stopped the installer along with it, so nothing was installed and nothing came back. If your copy has been sitting on an older version since the last time you tried to update, that is why.",
         "The Overview page settles instead of working itself out over and over. Each time the application looked at your terminals, it told every open tab that the figures had moved, whether any of them had or not. So the page spent its time doing the sums again rather than showing them to you, and it got slower the more tabs you had open."
       ],
@@ -93,20 +100,13 @@
         "You can leave that tab open. Start the app again and the page comes back on its own, where you left it."
       ],
       "release": "2.2.0"
-    },
-    {
-      "lines": [
-        "A new version now announces itself at the bottom of the sidebar. Clicking it shows you what changed before anything is installed.",
-        "You can also look for a new version yourself, from the About page, rather than waiting for the daily check."
-      ],
-      "release": "2.1.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-10T23:20:10.394808Z",
-  "release": "2.8.2",
-  "sha256": "8c9623aabe7712e7aa0ae7e38e2a76102c77dfbf64b6172838137c3d927a8b75",
-  "signature": "LISyAiywRCWtyQTfb4IgmRjVZoM9LYQe3IZkW-1RZSpOctkpUJYPQ2Wdk13H8BfrXRVJe8v8Dqhttf--GZndDQ",
-  "size": 78079367,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.2/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-11T01:23:33.912003Z",
+  "release": "2.8.3",
+  "sha256": "621148556cc35fbef14f3d65ce9aaf48dc2ccc2a7d906466e549f659f4229d4f",
+  "signature": "iKPlnc2HcD7Yw-J6IPa2gHsRH-ChQaEvHu0Zx7uigiP8D4jobhOjHeoBrcMr6JiM3J-COGkbEyKFuITunMyHCQ",
+  "size": 78081451,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.3/PropHedgeReports-Test-Setup.exe"
 }
