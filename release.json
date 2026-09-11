@@ -3,6 +3,20 @@
   "notes": [
     {
       "lines": [
+        "The Overview page arrives in about a second. The last two releases each took a piece out of this; what was left was the page adding up the same account totals sixteen times over to draw itself once.",
+        "The question about a newly arrived account no longer holds the rest of the application shut. It covers the screen on purpose, because who runs an account decides whether its balance is the firm's money or yours, but until now every click behind it did nothing at all and said nothing either, which looked like the application had stopped working. Click away from it, or press Later, and it steps aside. Neither answers it: the question comes back the next time your terminals are read."
+      ],
+      "release": "2.8.3"
+    },
+    {
+      "lines": [
+        "Updating no longer closes the application and leaves it closed. Pressing Update shut the application down to make way for the installer, then stopped the installer along with it, so nothing was installed and nothing came back. If your copy has been sitting on an older version since the last time you tried to update, that is why.",
+        "The Overview page settles instead of working itself out over and over. Each time the application looked at your terminals, it told every open tab that the figures had moved, whether any of them had or not. So the page spent its time doing the sums again rather than showing them to you, and it got slower the more tabs you had open."
+      ],
+      "release": "2.8.2"
+    },
+    {
+      "lines": [
         "The Overview page appears straight away again. It was taking the better part of a minute, because drawing it once meant working out one account's day-by-day balance history a hundred times over. It is worked out once now. Nothing about the figures has changed."
       ],
       "release": "2.8.1"
@@ -86,27 +100,13 @@
         "You can leave that tab open. Start the app again and the page comes back on its own, where you left it."
       ],
       "release": "2.2.0"
-    },
-    {
-      "lines": [
-        "A new version now announces itself at the bottom of the sidebar. Clicking it shows you what changed before anything is installed.",
-        "You can also look for a new version yourself, from the About page, rather than waiting for the daily check."
-      ],
-      "release": "2.1.0"
-    },
-    {
-      "lines": [
-        "The first time you open Prop Hedge Reports after installing it, it now starts in a few seconds rather than the best part of a minute.",
-        "Opening the calculator before you have added a terminal now tells you what it needs, instead of sitting on a loading screen that never finishes."
-      ],
-      "release": "2.0.1"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-10T22:40:45.735263Z",
-  "release": "2.8.1",
-  "sha256": "9dbe2977984283030ea6ce83d859cc84f0905526e59e9b8dee4dfdbd778687cf",
-  "signature": "ysOlBRa-hIyr4yQGpFZekomMYirbMiOW-zkvWXkJ21kYkm0nQTd2irO14nuwZXxyiAuIHLXR91dOsWOFoC4lDw",
-  "size": 78063927,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.1/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-11T01:31:43.843708Z",
+  "release": "2.8.3",
+  "sha256": "f9e8cd30598c38ddb1fe4bf81458fcfdb1b926948aca2629025f06cb095ea80b",
+  "signature": "7jpJrla4XJm39cdcJnsrph60qj90SxKdMZAyPADHNj9UOvWF-1vwaozoLxLHK8EwBPeJgt4SOlGkYXFgtCdKDw",
+  "size": 78065417,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.3/PropHedgeReports-Setup.exe"
 }
