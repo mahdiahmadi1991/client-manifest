@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "Every dropdown opens again if you have Windows animation turned off, or if you use the application over Remote Desktop, where it is off by default. Clicking one looked like it did nothing at all: the list was being built and filled, then drawn far outside the screen where you could not see it.",
+        "An account the application is waiting on your agreement to drive no longer says it is \"not from this build\". Your build was never the problem. It says it is waiting on you now, and what it wants is one button on that account's row under Sources."
+      ],
+      "release": "2.8.4"
+    },
+    {
+      "lines": [
         "The Overview page arrives in about a second. The last two releases each took a piece out of this; what was left was the page adding up the same account totals sixteen times over to draw itself once.",
         "The question about a newly arrived account no longer holds the rest of the application shut. It covers the screen on purpose, because who runs an account decides whether its balance is the firm's money or yours, but until now every click behind it did nothing at all and said nothing either, which looked like the application had stopped working. Click away from it, or press Later, and it steps aside. Neither answers it: the question comes back the next time your terminals are read."
       ],
@@ -93,20 +100,13 @@
         "When a new version is waiting, the About page now offers to install it, rather than only telling you it is there."
       ],
       "release": "2.3.0"
-    },
-    {
-      "lines": [
-        "Closing Prop Hedge Reports from the tray now says so on the page, instead of leaving a tab that quietly stops keeping up.",
-        "You can leave that tab open. Start the app again and the page comes back on its own, where you left it."
-      ],
-      "release": "2.2.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T01:31:43.843708Z",
-  "release": "2.8.3",
-  "sha256": "f9e8cd30598c38ddb1fe4bf81458fcfdb1b926948aca2629025f06cb095ea80b",
-  "signature": "7jpJrla4XJm39cdcJnsrph60qj90SxKdMZAyPADHNj9UOvWF-1vwaozoLxLHK8EwBPeJgt4SOlGkYXFgtCdKDw",
-  "size": 78065417,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.3/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-11T08:56:47.366703Z",
+  "release": "2.8.4",
+  "sha256": "e1d5b0b0a0c4dc327ed82faaa25ab19c065e4d2f091c8f671dd04bc6940d1639",
+  "signature": "5yaE8u5h86Ku9zoyTGivE36FIqhcR61JhM8KZ9GpTNP_-qRCzEQS_cqcHPvvymEYIC546v6IYEnTVD9IMJ7aAg",
+  "size": 78061687,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.4/PropHedgeReports-Setup.exe"
 }
