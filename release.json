@@ -3,6 +3,14 @@
   "notes": [
     {
       "lines": [
+        "**The calculator no longer goes quiet when you change the instrument.** Changing it empties the entry and the stop on purpose, because a price on gold is not a price on a currency pair. What went wrong was everything after that: the right-hand side turned into grey bars and stayed that way, through a restart and through an update, because the question it was waiting on is saved along with everything else. It now says which of the two prices it still needs, and fills back in the moment you type it.",
+        "**The figures you are reading always belong to the instrument named above them.** When the instrument changed, the previous one's answer stayed on screen underneath the new name: its levels, its lots, and the order it was offering to place. The application could not have placed that order itself, and nothing in your record was changed by it. But the numbers were readable and copyable, so if you sized a hedge straight after switching instruments it is worth checking that what you placed is what you meant.",
+        "**An empty price now looks empty.** The entry read 0.0 when there was nothing in it, which looks like a price somebody typed rather than a box waiting to be filled. Arm also waits now, instead of offering to run its checks on a hedge that has no prices in it yet."
+      ],
+      "release": "2.10.1"
+    },
+    {
+      "lines": [
         "**Uninstalling can no longer take your records without asking.** It has always offered to delete them and kept them unless you said otherwise, but an uninstall started from a command line met that question with nobody there to answer it. It now keeps everything in that case. Removing a test build can never touch the records of the ordinary one, whichever way it is removed.",
         "**A failed update keeps its own explanation.** The installer's log is what the update window offers to copy and send on, and the next check for a new version was tidying it away within the hour.",
         "**What is new in a release now reads as it was written**, with each item's opening line standing out, instead of arriving as one block of plain text."
@@ -79,26 +87,13 @@
         "When the application updates while you have a window of it open, that window says so and offers to reload. The message was there before, but only a corner of it reached the screen and the button was off the edge."
       ],
       "release": "2.7.0"
-    },
-    {
-      "lines": [
-        "Several figures were being worked out wrongly and are corrected, so some numbers will read differently after this update. What each of them was doing is below.",
-        "Broker trading that answered no hedge was counting your hedged legs a second time. It read as a profit where the truth was a loss.",
-        "The spread your fills paid is now shown. It disappeared whenever a single operation was missing its quotes, and spread usually costs several times the commission.",
-        "A hedge that raised a question you had not answered kept its money out of your plans and your accounts until you accepted it. Both its legs were closed and the money was already yours, so it counts. The question stays on the row where you can read it.",
-        "The positions listed as having no counterpart on the Sources page counted trades that had been hedged all along.",
-        "A challenge account you have not put in a plan no longer has its chart drawn from zero, which showed the balance the firm opened it at as profit.",
-        "When your firm hands over the next account before it closes the one that passed, you can now record it against the plan it came from. There was no way to do that: the plan was still running, so nothing offered it, and recording a new purchase would have charged you a second fee and started the account over at the first stage. Every open plan is offered now, and one that is still running says which account joining it will mark as passed.",
-        "Each terminal lists the accounts it holds, not only the one it is logged into, and says which of them have never been read. Log into one and it is read on the next cycle. The page also loads about twice as fast."
-      ],
-      "release": "2.6.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T17:39:18.560157Z",
-  "release": "2.10.0",
-  "sha256": "f9fefcaedf000256bd116c503c479ae463e19d09031fdd3d575da1d479d8553e",
-  "signature": "aUAqrndworoLdserRhxLTbGBHjVda1UBxadVf821AG9RZ95tDTqYI-de716a628BK2hTmVEYZvjA7T-TsxlHCA",
-  "size": 102851331,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-11T19:51:53.139772Z",
+  "release": "2.10.1",
+  "sha256": "ff28a183f7ac5b9aa122e9b53498e052bd5c8e77e7b79e34f38a8e55b0cf5dc6",
+  "signature": "nPioIfBeS1lKT3dip4TOb6RaIckzUEkCRykwyvV4aiFsxVqrYxnQ9lJ8KV2OZHymVp4ABfycYvq1IELWhc8bAQ",
+  "size": 102850913,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.1/PropHedgeReports-Setup.exe"
 }
