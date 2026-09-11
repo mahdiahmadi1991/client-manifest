@@ -3,6 +3,16 @@
   "notes": [
     {
       "lines": [
+        "**The application opens again.** Version 2.8.5 went out without its screens. It started, read your terminals and kept your record safe, but showed an empty window. Nothing in your record was affected, and this release puts the screens back.",
+        "**You can correct a hedge the application paired for you.** Open it and press Correct the legs to say which broker tickets really answered that trade: swap one for another, add a ticket you opened later to top the leg up, or drop one you closed and replaced. A ticket you take out is counted as your own trading instead, so nothing goes missing from your figures. Undo my correction hands the hedge back at any time.",
+        "**Updating happens in one window, and tells you how it went.** It lists what is new, shows the install while it runs, and says plainly if it did not work: what went wrong, what the installer itself wrote, and a button that copies all of it so you can send it on. A failed update changes nothing on your computer and you carry straight on with the version you were already using.",
+        "**The page you were reading comes back in the same tab** after an update, instead of a second one opening beside it.",
+        "**New versions are found within the hour** rather than the next day. You can change how often on the Settings page, under Reading."
+      ],
+      "release": "2.9.0"
+    },
+    {
+      "lines": [
         "Choosing an account in the calculator no longer waits on your agreement. Working out a size sends nothing to any broker, so there was nothing there to agree to. You are asked when you arm a hedge instead, and only for a terminal the product would place the order through itself. A terminal left on Not driven, or set to By hand so that you press Buy yourself, is never asked at all."
       ],
       "release": "2.8.5"
@@ -90,23 +100,13 @@
         "The calculator no longer gets stuck when it is remembering an account you have since removed, and no longer blinks every time the terminals are read."
       ],
       "release": "2.5.0"
-    },
-    {
-      "lines": [
-        "Every account now says whether you may still trade in it. The one your plan is running on is marked, and so are the ones that have passed or been lost.",
-        "Prop and broker accounts are told apart at a glance rather than by reading the word.",
-        "Reading the terminals now has its own small control inside the status pill at the top, so the bar that sat above the reports is gone. Export moved up beside the page title.",
-        "The button on an account that belongs to no plan used to do nothing at all. It now takes you to the form, and says what it does.",
-        "A challenge stage looks the same wherever it appears. In the calculator, the account you had chosen showed its stage in the wrong stage's colour."
-      ],
-      "release": "2.4.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T10:48:02.468456Z",
-  "release": "2.8.5",
-  "sha256": "3b3bd1ef52f3d3816f8c4e4765c010fa21e66c523d02a0de70ca2b259cccbad8",
-  "signature": "EaWJ01-48TPtn7_UNmWycWERn6MAFrcgJpROTshkCVRmtArsUJKx2BgxjIwFLb_VmRJ7Y_v7B583yXYO1DQ4AA",
-  "size": 101821706,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.5/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-11T14:40:25.380675Z",
+  "release": "2.9.0",
+  "sha256": "9658fff4b4cb9bd6deb6dc24900549d2e9c91ce7a9147c2de0d691db5ff9dfeb",
+  "signature": "f58dqgublPH4gPvxo22YVM3rXi_-K9a2CmiXhlx2nZm2_0bgh8kww5BOviGWx2HeKIALx_ZtOEIDjoq5-jStBg",
+  "size": 102851264,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.9.0/PropHedgeReports-Setup.exe"
 }
