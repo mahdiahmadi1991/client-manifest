@@ -3,6 +3,12 @@
   "notes": [
     {
       "lines": [
+        "Choosing an account in the calculator no longer waits on your agreement. Working out a size sends nothing to any broker, so there was nothing there to agree to. You are asked when you arm a hedge instead, and only for a terminal the product would place the order through itself. A terminal left on Not driven, or set to By hand so that you press Buy yourself, is never asked at all."
+      ],
+      "release": "2.8.5"
+    },
+    {
+      "lines": [
         "Every dropdown opens again if you have Windows animation turned off, or if you use the application over Remote Desktop, where it is off by default. Clicking one looked like it did nothing at all: the list was being built and filled, then drawn far outside the screen where you could not see it.",
         "An account the application is waiting on your agreement to drive no longer says it is \"not from this build\". Your build was never the problem. It says it is waiting on you now, and what it wants is one button on that account's row under Sources."
       ],
@@ -94,19 +100,13 @@
         "A challenge stage looks the same wherever it appears. In the calculator, the account you had chosen showed its stage in the wrong stage's colour."
       ],
       "release": "2.4.0"
-    },
-    {
-      "lines": [
-        "When a new version is waiting, the About page now offers to install it, rather than only telling you it is there."
-      ],
-      "release": "2.3.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T08:56:47.366703Z",
-  "release": "2.8.4",
-  "sha256": "e1d5b0b0a0c4dc327ed82faaa25ab19c065e4d2f091c8f671dd04bc6940d1639",
-  "signature": "5yaE8u5h86Ku9zoyTGivE36FIqhcR61JhM8KZ9GpTNP_-qRCzEQS_cqcHPvvymEYIC546v6IYEnTVD9IMJ7aAg",
-  "size": 78061687,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.4/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-11T10:48:02.468456Z",
+  "release": "2.8.5",
+  "sha256": "3b3bd1ef52f3d3816f8c4e4765c010fa21e66c523d02a0de70ca2b259cccbad8",
+  "signature": "EaWJ01-48TPtn7_UNmWycWERn6MAFrcgJpROTshkCVRmtArsUJKx2BgxjIwFLb_VmRJ7Y_v7B583yXYO1DQ4AA",
+  "size": 101821706,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.5/PropHedgeReports-Setup.exe"
 }
