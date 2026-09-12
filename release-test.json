@@ -3,6 +3,12 @@
   "notes": [
     {
       "lines": [
+        "**What an update leaves behind is no longer swept away by the next one.** The application records which version it came from and how long installing took on your computer, and the next check for a release was deleting that. So the window kept guessing how long to expect, and anyone who looked for updates soon after installing one lost the message telling them it had worked."
+      ],
+      "release": "2.10.4"
+    },
+    {
+      "lines": [
         "**Updating is more patient on a slow computer.** The last release added a progress bar and a message for an update that does not come back, and both were measured against a fast machine. On a slower one a perfectly good update took twice as long as expected, which was long enough for the window to announce that the application had not come back while it was coming back. It now waits properly before saying anything of the kind, and what it expects an install to take is no longer a guess made on somebody else's computer.",
         "**And if the application really does not come back, something now notices.** The part meant to start it again was being launched in a way that created it and then ran none of it, so it had never once done its job. It does now."
       ],
@@ -70,19 +76,13 @@
         "The Overview page settles instead of working itself out over and over. Each time the application looked at your terminals, it told every open tab that the figures had moved, whether any of them had or not. So the page spent its time doing the sums again rather than showing them to you, and it got slower the more tabs you had open."
       ],
       "release": "2.8.2"
-    },
-    {
-      "lines": [
-        "The Overview page appears straight away again. It was taking the better part of a minute, because drawing it once meant working out one account's day-by-day balance history a hundred times over. It is worked out once now. Nothing about the figures has changed."
-      ],
-      "release": "2.8.1"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-12T12:23:33.465286Z",
-  "release": "2.10.3",
-  "sha256": "5b961960e24f10e795bd11a0554f2457ff9909e787719f187a0ae2e8f2c2f977",
-  "signature": "PQ21PQwzMo5Ud0Kxk2uUP2_w3oa3MyoOru899UcW3CzJaifWSJMJWSjQEI9zDk8Lf2HbMQ0SFSWJt02-PzX_DA",
-  "size": 78122442,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.3/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-12T12:32:32.713369Z",
+  "release": "2.10.4",
+  "sha256": "728bc8029ff41b218ddf114ce00d374becf8361ac906917663f1e78d067ddf83",
+  "signature": "1EGWpRqw3ncEoWeYi_5BIWVS-Kvzm4ujHc0nVSexwYvrc8N7LNOBPG7o8G-NEUaGl66TAj2tUZgrm1kq9n8hAQ",
+  "size": 78118690,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.4/PropHedgeReports-Test-Setup.exe"
 }
