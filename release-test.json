@@ -3,6 +3,48 @@
   "notes": [
     {
       "lines": [
+        "**Updating now tells you where it has got to, and roughly how much longer.** The bar moves the whole way through instead of sitting still, and what it leans on is how long installing has actually taken on your computer rather than on somebody else's. Beside it is the time so far. Without those two numbers there is no way to tell a slow computer from a stuck one, which is why people were refreshing the page and losing the window.",
+        "**When an update has finished, the application says so.** It comes back on the new version and confirms which version you are on and what you got. Before this it simply returned you to a page that looked exactly like the one you left, and whether it had worked was anyone's guess.",
+        "**The update window no longer offers to install a version you are already running.** On some computers a perfectly good update ended with the window asking to install it again, with nothing listed underneath. The application now records what became of an update before it hands over, so the copy that comes back can say plainly what happened rather than working it out.",
+        "**If the application does not come back after installing, you are told rather than left watching a bar.** It keeps trying quietly and carries on by itself if it was only being slow, and something outside the installation now starts the application if the installer's own restart did not. The window also gives you a way out instead of holding you there.",
+        "**The update window stays one size from beginning to end**, so nothing moves under you between one step and the next, and a long list of changes scrolls inside it."
+      ],
+      "release": "2.10.2"
+    },
+    {
+      "lines": [
+        "**The calculator no longer goes quiet when you change the instrument.** Changing it empties the entry and the stop on purpose, because a price on gold is not a price on a currency pair. What went wrong was everything after that: the right-hand side turned into grey bars and stayed that way, through a restart and through an update, because the question it was waiting on is saved along with everything else. It now says which of the two prices it still needs, and fills back in the moment you type it.",
+        "**The figures you are reading always belong to the instrument named above them.** When the instrument changed, the previous one's answer stayed on screen underneath the new name: its levels, its lots, and the order it was offering to place. The application could not have placed that order itself, and nothing in your record was changed by it. But the numbers were readable and copyable, so if you sized a hedge straight after switching instruments it is worth checking that what you placed is what you meant.",
+        "**An empty price now looks empty.** The entry read 0.0 when there was nothing in it, which looks like a price somebody typed rather than a box waiting to be filled. Arm also waits now, instead of offering to run its checks on a hedge that has no prices in it yet."
+      ],
+      "release": "2.10.1"
+    },
+    {
+      "lines": [
+        "**Uninstalling can no longer take your records without asking.** It has always offered to delete them and kept them unless you said otherwise, but an uninstall started from a command line met that question with nobody there to answer it. It now keeps everything in that case. Removing a test build can never touch the records of the ordinary one, whichever way it is removed.",
+        "**A failed update keeps its own explanation.** The installer's log is what the update window offers to copy and send on, and the next check for a new version was tidying it away within the hour.",
+        "**What is new in a release now reads as it was written**, with each item's opening line standing out, instead of arriving as one block of plain text."
+      ],
+      "release": "2.10.0"
+    },
+    {
+      "lines": [
+        "**The application opens again.** Version 2.8.5 went out without its screens. It started, read your terminals and kept your record safe, but showed an empty window. Nothing in your record was affected, and this release puts the screens back.",
+        "**You can correct a hedge the application paired for you.** Open it and press Correct the legs to say which broker tickets really answered that trade: swap one for another, add a ticket you opened later to top the leg up, or drop one you closed and replaced. A ticket you take out is counted as your own trading instead, so nothing goes missing from your figures. Undo my correction hands the hedge back at any time.",
+        "**Updating happens in one window, and tells you how it went.** It lists what is new, shows the install while it runs, and says plainly if it did not work: what went wrong, what the installer itself wrote, and a button that copies all of it so you can send it on. A failed update changes nothing on your computer and you carry straight on with the version you were already using.",
+        "**The page you were reading comes back in the same tab** after an update, instead of a second one opening beside it.",
+        "**New versions are found within the hour** rather than the next day. You can change how often on the Settings page, under Reading."
+      ],
+      "release": "2.9.0"
+    },
+    {
+      "lines": [
+        "Choosing an account in the calculator no longer waits on your agreement. Working out a size sends nothing to any broker, so there was nothing there to agree to. You are asked when you arm a hedge instead, and only for a terminal the product would place the order through itself. A terminal left on Not driven, or set to By hand so that you press Buy yourself, is never asked at all."
+      ],
+      "release": "2.8.5"
+    },
+    {
+      "lines": [
         "Every dropdown opens again if you have Windows animation turned off, or if you use the application over Remote Desktop, where it is off by default. Clicking one looked like it did nothing at all: the list was being built and filled, then drawn far outside the screen where you could not see it.",
         "An account the application is waiting on your agreement to drive no longer says it is \"not from this build\". Your build was never the problem. It says it is waiting on you now, and what it wants is one button on that account's row under Sources."
       ],
@@ -48,65 +90,13 @@
         "Closing a hedge no longer reports that the terminal refused when it did the work, and a hedge left armed on a driven terminal withdraws itself after half an hour and frees the account. You can change that time, or switch it off, under Settings, Execution."
       ],
       "release": "2.8.0"
-    },
-    {
-      "lines": [
-        "Wherever an account appears it now names the plan it came from, and that name takes you to the plan. Six accounts of one firm used to be six identical rows, and which purchase each came from was on no screen.",
-        "When the application updates while you have a window of it open, that window says so and offers to reload. The message was there before, but only a corner of it reached the screen and the button was off the edge."
-      ],
-      "release": "2.7.0"
-    },
-    {
-      "lines": [
-        "Several figures were being worked out wrongly and are corrected, so some numbers will read differently after this update. What each of them was doing is below.",
-        "Broker trading that answered no hedge was counting your hedged legs a second time. It read as a profit where the truth was a loss.",
-        "The spread your fills paid is now shown. It disappeared whenever a single operation was missing its quotes, and spread usually costs several times the commission.",
-        "A hedge that raised a question you had not answered kept its money out of your plans and your accounts until you accepted it. Both its legs were closed and the money was already yours, so it counts. The question stays on the row where you can read it.",
-        "The positions listed as having no counterpart on the Sources page counted trades that had been hedged all along.",
-        "A challenge account you have not put in a plan no longer has its chart drawn from zero, which showed the balance the firm opened it at as profit.",
-        "When your firm hands over the next account before it closes the one that passed, you can now record it against the plan it came from. There was no way to do that: the plan was still running, so nothing offered it, and recording a new purchase would have charged you a second fee and started the account over at the first stage. Every open plan is offered now, and one that is still running says which account joining it will mark as passed.",
-        "Each terminal lists the accounts it holds, not only the one it is logged into, and says which of them have never been read. Log into one and it is read on the next cycle. The page also loads about twice as fast."
-      ],
-      "release": "2.6.0"
-    },
-    {
-      "lines": [
-        "Hedges are found wherever both their legs are stored, not only where a terminal happened to be pointed when they arrived. On a month of real trading that is the difference between finding a third of them and finding almost all.",
-        "Recording a pairing, declaring a trade as your own, accepting a hedge and confirming what a server is now take under a second. They used to take twenty to thirty, because each one opened MetaTrader for no reason.",
-        "A plan now shows what it has actually been worth: the price together with the broker money its hedges earned. It reads as the chain it is, from what you bought through every account it gained, and the Plans page charts them all side by side. Finished plans fold up.",
-        "The application works out for itself what happened to a challenge account. When the firm withdraws its right to trade, reaching the target passes the plan and crossing a drawdown floor closes it, named after the floor. You are asked only when the account is gone and none of its own figures explains why.",
-        "The daily drawdown floor is now drawn on the challenge chart, day by day, with the day an account went through it marked. It is rebuilt from your own trades, so it is there for accounts the application was never watching.",
-        "Each account shows one gauge, running from the floor that loses it to the target that passes it, instead of two bars that could not be read together.",
-        "When a new account appears on a terminal, the application says so wherever you are and asks the one thing it cannot work out: what the server is, or which plan the account came from.",
-        "Installing an update shows what it is doing from the moment you press the button until the application comes back. Before this the window simply closed and nothing happened until it was over.",
-        "Messages appear as cards under the header rather than a line of grey text, and anything refused stays on screen until you have read it.",
-        "Pairing a leg by hand is a clearer screen. The trade you are answering reads as one line, the closest candidate is already chosen, and you can see what the pairing would make before you record it.",
-        "The calculator no longer gets stuck when it is remembering an account you have since removed, and no longer blinks every time the terminals are read."
-      ],
-      "release": "2.5.0"
-    },
-    {
-      "lines": [
-        "Every account now says whether you may still trade in it. The one your plan is running on is marked, and so are the ones that have passed or been lost.",
-        "Prop and broker accounts are told apart at a glance rather than by reading the word.",
-        "Reading the terminals now has its own small control inside the status pill at the top, so the bar that sat above the reports is gone. Export moved up beside the page title.",
-        "The button on an account that belongs to no plan used to do nothing at all. It now takes you to the form, and says what it does.",
-        "A challenge stage looks the same wherever it appears. In the calculator, the account you had chosen showed its stage in the wrong stage's colour."
-      ],
-      "release": "2.4.0"
-    },
-    {
-      "lines": [
-        "When a new version is waiting, the About page now offers to install it, rather than only telling you it is there."
-      ],
-      "release": "2.3.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T08:48:58.074794Z",
-  "release": "2.8.4",
-  "sha256": "064dea259b5e1cbe415d888d83ac0c12d8034f63fdec31da66073bf855026ba4",
-  "signature": "5cJ-cBcds739Co0KaKgp7hq2v2mkwdCtzqAKufjXM9WvJiWhIGawp1aCZD22dXaZlaP_EC-bz7fMFZ2GgfzNBQ",
-  "size": 78087570,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.8.4/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-12T11:38:21.854766Z",
+  "release": "2.10.2",
+  "sha256": "e7afac60263e5712a00507ec360092ed54fc8d9b2898028a2f1e260eecc1f27c",
+  "signature": "0wKlvixfnpof2mlTDtCY8nPav4txnJR2sm866jjZEw1A2jDXuQh6l-gD0IS538JSccseKgdaLXL_JenPoxcXBQ",
+  "size": 78119839,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.2/PropHedgeReports-Test-Setup.exe"
 }
