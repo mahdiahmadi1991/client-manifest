@@ -3,6 +3,39 @@
   "notes": [
     {
       "lines": [
+        "**Nothing opens a window on your MetaTrader terminals unless you have just asked for something that needs it.** You will have seen dialogs appear and disappear on your screen, seemingly at random. What they were was a check confirming the application can find the buttons in the Order dialog on your build of MetaTrader, and it ran every time the terminals were looked at, which is every thirty seconds. On a terminal where that check does not succeed it ran again on every pass. It now happens in two places only: when you set a terminal's route, and when you arm a hedge. Both are things you are doing, so a window opening is something you are expecting.",
+        "**And a terminal driven through the expert is not asked about that at all.** It never uses the Order dialog: orders, closes and stop changes all go through the expert. One of your terminals was being refused for want of a check that did not apply to it.",
+        "**Updating tells you where it has got to, and roughly how much longer.** The bar moves the whole way through instead of sitting still, and what it leans on is how long installing has actually taken on your computer rather than on somebody else's. Beside it is the time so far. Without those two numbers there is no way to tell a slow computer from a stuck one, which is why people were refreshing the page and losing the window.",
+        "**When an update has finished, the application says so.** It comes back on the new version and confirms which version you are on and what you got. Before this it returned you to a page that looked exactly like the one you left, and whether it had worked was anyone's guess.",
+        "**The update window no longer offers to install a version you are already running.** On some computers a perfectly good update ended with the window asking to install it again, with nothing listed underneath. The application now writes down what became of an update before it hands over, so the copy that comes back can say plainly what happened instead of working it out.",
+        "**If the application does not come back after installing, you are told rather than left watching a bar.** It keeps trying quietly and carries on by itself if it was only being slow, and something outside the installation now starts the application if the installer's own restart did not. The window gives you a way out instead of holding you there. Measured on a slow computer: an install that finished and started nothing was brought back by itself in half a minute.",
+        "**The update window stays one size from beginning to end**, so nothing moves under you between one step and the next, and a long list of changes scrolls inside it.",
+        "**Later now means later on the question about a newly arrived account.** It used to come back on the next page you opened. It waits an hour now, and survives closing the application. Something genuinely new still asks straight away, which is the only reason that question interrupts you at all."
+      ],
+      "release": "2.10.7"
+    },
+    {
+      "lines": [],
+      "release": "2.10.6"
+    },
+    {
+      "lines": [],
+      "release": "2.10.5"
+    },
+    {
+      "lines": [],
+      "release": "2.10.4"
+    },
+    {
+      "lines": [],
+      "release": "2.10.3"
+    },
+    {
+      "lines": [],
+      "release": "2.10.2"
+    },
+    {
+      "lines": [
         "**The calculator no longer goes quiet when you change the instrument.** Changing it empties the entry and the stop on purpose, because a price on gold is not a price on a currency pair. What went wrong was everything after that: the right-hand side turned into grey bars and stayed that way, through a restart and through an update, because the question it was waiting on is saved along with everything else. It now says which of the two prices it still needs, and fills back in the moment you type it.",
         "**The figures you are reading always belong to the instrument named above them.** When the instrument changed, the previous one's answer stayed on screen underneath the new name: its levels, its lots, and the order it was offering to place. The application could not have placed that order itself, and nothing in your record was changed by it. But the numbers were readable and copyable, so if you sized a hedge straight after switching instruments it is worth checking that what you placed is what you meant.",
         "**An empty price now looks empty.** The entry read 0.0 when there was nothing in it, which looks like a price somebody typed rather than a box waiting to be filled. Arm also waits now, instead of offering to run its checks on a hedge that has no prices in it yet."
@@ -32,68 +65,13 @@
         "Choosing an account in the calculator no longer waits on your agreement. Working out a size sends nothing to any broker, so there was nothing there to agree to. You are asked when you arm a hedge instead, and only for a terminal the product would place the order through itself. A terminal left on Not driven, or set to By hand so that you press Buy yourself, is never asked at all."
       ],
       "release": "2.8.5"
-    },
-    {
-      "lines": [
-        "Every dropdown opens again if you have Windows animation turned off, or if you use the application over Remote Desktop, where it is off by default. Clicking one looked like it did nothing at all: the list was being built and filled, then drawn far outside the screen where you could not see it.",
-        "An account the application is waiting on your agreement to drive no longer says it is \"not from this build\". Your build was never the problem. It says it is waiting on you now, and what it wants is one button on that account's row under Sources."
-      ],
-      "release": "2.8.4"
-    },
-    {
-      "lines": [
-        "The Overview page arrives in about a second. The last two releases each took a piece out of this; what was left was the page adding up the same account totals sixteen times over to draw itself once.",
-        "The question about a newly arrived account no longer holds the rest of the application shut. It covers the screen on purpose, because who runs an account decides whether its balance is the firm's money or yours, but until now every click behind it did nothing at all and said nothing either, which looked like the application had stopped working. Click away from it, or press Later, and it steps aside. Neither answers it: the question comes back the next time your terminals are read."
-      ],
-      "release": "2.8.3"
-    },
-    {
-      "lines": [
-        "Updating no longer closes the application and leaves it closed. Pressing Update shut the application down to make way for the installer, then stopped the installer along with it, so nothing was installed and nothing came back. If your copy has been sitting on an older version since the last time you tried to update, that is why.",
-        "The Overview page settles instead of working itself out over and over. Each time the application looked at your terminals, it told every open tab that the figures had moved, whether any of them had or not. So the page spent its time doing the sums again rather than showing them to you, and it got slower the more tabs you had open."
-      ],
-      "release": "2.8.2"
-    },
-    {
-      "lines": [
-        "The Overview page appears straight away again. It was taking the better part of a minute, because drawing it once meant working out one account's day-by-day balance history a hundred times over. It is worked out once now. Nothing about the figures has changed."
-      ],
-      "release": "2.8.1"
-    },
-    {
-      "lines": [
-        "**You can now place a hedge from the calculator.** Size it as before, then Arm and Fire, one button with a second between them. Both legs go to the two terminals you chose, each with its stop and its target on the broker's own server, and the application carries the pair to the end: if one leg is taken by the market it closes the other, and if you move a stop by hand on one leg the other follows. A line under the header follows the hedge while it is in the market, and you can close both legs from the page.",
-        "**Each terminal on Sources gains a choice of how it may be driven**, and says in plain words what it still needs before an order can go. Nothing is sent to a terminal you have not chosen a route for.",
-        "**Set this terminal up.** One press attaches the expert, turns on Algo Trading and turns on One Click Trading, and the terminal comes back ready in about twenty seconds. It lists everything it will do before it does any of it, and it never types into a login window. The same button starts a terminal you have closed, and offers to update the expert in one running an older version.",
-        "**The expert the application installs is a trading desk of its own.** Open at market or rest an order on a line you drag, with the stop and target placed for you; two chains of positions side by side, each with one stop and one target you drag on the chart; break even, risk free and save profit as buttons or as lines you set in advance; keyboard shortcuts; and limits on spread, size, margin and the day's loss. Five colour schemes, and a separate choice for each terminal. It leaves your chart exactly as it found it.",
-        "**The plan you arm is drawn on your prop chart** before anything is placed, with the risk and the reward shaded, and you can drag its entry line to move the whole plan without arming again.",
-        "**A position you open on the prop terminal yourself can be hedged for you.** Off by default. Turn it on and the matching leg goes to your broker at the ratio the calculator suggests, and the pair is carried like any other. What you already had open stays your own.",
-        "**You can hedge any instrument your brokers offer.** The application no longer has to have heard of it: it reads your Market Watch, and two brokers spelling one instrument differently are matched wherever the spelling allows. Where it cannot tell, it asks you once.",
-        "**Sources can make you a second terminal**, copied from one you already have, with a shortcut that starts it separately. It carries no account, no history and no saved login.",
-        "**Recording a plan now asks for the account the firm handed you**, and refuses one that was not opened at the plan's size. A plan nothing has happened under can be deleted rather than closed.",
-        "**A trade you place appears here in about a second** instead of up to half a minute, and the terminals page loads about twice as fast.",
-        "**Settings you change now take effect straight away.** How often the terminals are read, the quote windows, the clock drift limit and the history lookback were being saved and shown back to you without being used. Six more numbers are yours to set, and a new Execution tab holds every dial for driving a terminal.",
-        "Some figures were being worked out wrongly and are corrected, so a few numbers will read differently after this update. What execution costs is now measured on the instrument you are sizing rather than pooled across everything the account has traded, which was overstating a gold hedge by about thirty times. A plan's account no longer reports its whole drawdown allowance as spent because the application read it before the firm's money arrived.",
-        "Arming refuses, with the reason and what to do about it, when a leg has no stop, when a stop is on the wrong side of its entry, when the two legs face the same way, when the market has already moved past the plan, when the account is not the one a plan is running on, and when the position that opened is not the one that was ordered.",
-        "A window you have open in your terminal is never closed by the application. If one is open when a hedge is armed, it says which window it is and does nothing.",
-        "If the application stops while a hedge is being placed, it works out what actually reached the market when it comes back, rather than leaving that account unable to hedge again.",
-        "Closing a hedge no longer reports that the terminal refused when it did the work, and a hedge left armed on a driven terminal withdraws itself after half an hour and frees the account. You can change that time, or switch it off, under Settings, Execution."
-      ],
-      "release": "2.8.0"
-    },
-    {
-      "lines": [
-        "Wherever an account appears it now names the plan it came from, and that name takes you to the plan. Six accounts of one firm used to be six identical rows, and which purchase each came from was on no screen.",
-        "When the application updates while you have a window of it open, that window says so and offers to reload. The message was there before, but only a corner of it reached the screen and the button was off the edge."
-      ],
-      "release": "2.7.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-11T19:51:53.139772Z",
-  "release": "2.10.1",
-  "sha256": "ff28a183f7ac5b9aa122e9b53498e052bd5c8e77e7b79e34f38a8e55b0cf5dc6",
-  "signature": "nPioIfBeS1lKT3dip4TOb6RaIckzUEkCRykwyvV4aiFsxVqrYxnQ9lJ8KV2OZHymVp4ABfycYvq1IELWhc8bAQ",
-  "size": 102850913,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.1/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-12T14:29:24.697640Z",
+  "release": "2.10.7",
+  "sha256": "ccfa27ab4bf9a01141fa2af65c29b9582908fd1c5abd811799374aa799bd3652",
+  "signature": "tUWliXLNG0LdSGgY9joh38j1Wf8phteyogTH8A7NwnUiE3p--1Au8lH56hPj138vE1gE-vjqsuPfkvTJcDDICg",
+  "size": 102882335,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.7/PropHedgeReports-Setup.exe"
 }
