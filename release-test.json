@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "**Updating is more patient on a slow computer.** The last release added a progress bar and a message for an update that does not come back, and both were measured against a fast machine. On a slower one a perfectly good update took twice as long as expected, which was long enough for the window to announce that the application had not come back while it was coming back. It now waits properly before saying anything of the kind, and what it expects an install to take is no longer a guess made on somebody else's computer.",
+        "**And if the application really does not come back, something now notices.** The part meant to start it again was being launched in a way that created it and then ran none of it, so it had never once done its job. It does now."
+      ],
+      "release": "2.10.3"
+    },
+    {
+      "lines": [
         "**Updating now tells you where it has got to, and roughly how much longer.** The bar moves the whole way through instead of sitting still, and what it leans on is how long installing has actually taken on your computer rather than on somebody else's. Beside it is the time so far. Without those two numbers there is no way to tell a slow computer from a stuck one, which is why people were refreshing the page and losing the window.",
         "**When an update has finished, the application says so.** It comes back on the new version and confirms which version you are on and what you got. Before this it simply returned you to a page that looked exactly like the one you left, and whether it had worked was anyone's guess.",
         "**The update window no longer offers to install a version you are already running.** On some computers a perfectly good update ended with the window asking to install it again, with nothing listed underneath. The application now records what became of an update before it hands over, so the copy that comes back can say plainly what happened rather than working it out.",
@@ -69,34 +76,13 @@
         "The Overview page appears straight away again. It was taking the better part of a minute, because drawing it once meant working out one account's day-by-day balance history a hundred times over. It is worked out once now. Nothing about the figures has changed."
       ],
       "release": "2.8.1"
-    },
-    {
-      "lines": [
-        "**You can now place a hedge from the calculator.** Size it as before, then Arm and Fire, one button with a second between them. Both legs go to the two terminals you chose, each with its stop and its target on the broker's own server, and the application carries the pair to the end: if one leg is taken by the market it closes the other, and if you move a stop by hand on one leg the other follows. A line under the header follows the hedge while it is in the market, and you can close both legs from the page.",
-        "**Each terminal on Sources gains a choice of how it may be driven**, and says in plain words what it still needs before an order can go. Nothing is sent to a terminal you have not chosen a route for.",
-        "**Set this terminal up.** One press attaches the expert, turns on Algo Trading and turns on One Click Trading, and the terminal comes back ready in about twenty seconds. It lists everything it will do before it does any of it, and it never types into a login window. The same button starts a terminal you have closed, and offers to update the expert in one running an older version.",
-        "**The expert the application installs is a trading desk of its own.** Open at market or rest an order on a line you drag, with the stop and target placed for you; two chains of positions side by side, each with one stop and one target you drag on the chart; break even, risk free and save profit as buttons or as lines you set in advance; keyboard shortcuts; and limits on spread, size, margin and the day's loss. Five colour schemes, and a separate choice for each terminal. It leaves your chart exactly as it found it.",
-        "**The plan you arm is drawn on your prop chart** before anything is placed, with the risk and the reward shaded, and you can drag its entry line to move the whole plan without arming again.",
-        "**A position you open on the prop terminal yourself can be hedged for you.** Off by default. Turn it on and the matching leg goes to your broker at the ratio the calculator suggests, and the pair is carried like any other. What you already had open stays your own.",
-        "**You can hedge any instrument your brokers offer.** The application no longer has to have heard of it: it reads your Market Watch, and two brokers spelling one instrument differently are matched wherever the spelling allows. Where it cannot tell, it asks you once.",
-        "**Sources can make you a second terminal**, copied from one you already have, with a shortcut that starts it separately. It carries no account, no history and no saved login.",
-        "**Recording a plan now asks for the account the firm handed you**, and refuses one that was not opened at the plan's size. A plan nothing has happened under can be deleted rather than closed.",
-        "**A trade you place appears here in about a second** instead of up to half a minute, and the terminals page loads about twice as fast.",
-        "**Settings you change now take effect straight away.** How often the terminals are read, the quote windows, the clock drift limit and the history lookback were being saved and shown back to you without being used. Six more numbers are yours to set, and a new Execution tab holds every dial for driving a terminal.",
-        "Some figures were being worked out wrongly and are corrected, so a few numbers will read differently after this update. What execution costs is now measured on the instrument you are sizing rather than pooled across everything the account has traded, which was overstating a gold hedge by about thirty times. A plan's account no longer reports its whole drawdown allowance as spent because the application read it before the firm's money arrived.",
-        "Arming refuses, with the reason and what to do about it, when a leg has no stop, when a stop is on the wrong side of its entry, when the two legs face the same way, when the market has already moved past the plan, when the account is not the one a plan is running on, and when the position that opened is not the one that was ordered.",
-        "A window you have open in your terminal is never closed by the application. If one is open when a hedge is armed, it says which window it is and does nothing.",
-        "If the application stops while a hedge is being placed, it works out what actually reached the market when it comes back, rather than leaving that account unable to hedge again.",
-        "Closing a hedge no longer reports that the terminal refused when it did the work, and a hedge left armed on a driven terminal withdraws itself after half an hour and frees the account. You can change that time, or switch it off, under Settings, Execution."
-      ],
-      "release": "2.8.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-12T11:38:21.854766Z",
-  "release": "2.10.2",
-  "sha256": "e7afac60263e5712a00507ec360092ed54fc8d9b2898028a2f1e260eecc1f27c",
-  "signature": "0wKlvixfnpof2mlTDtCY8nPav4txnJR2sm866jjZEw1A2jDXuQh6l-gD0IS538JSccseKgdaLXL_JenPoxcXBQ",
-  "size": 78119839,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.2/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-12T12:23:33.465286Z",
+  "release": "2.10.3",
+  "sha256": "5b961960e24f10e795bd11a0554f2457ff9909e787719f187a0ae2e8f2c2f977",
+  "signature": "PQ21PQwzMo5Ud0Kxk2uUP2_w3oa3MyoOru899UcW3CzJaifWSJMJWSjQEI9zDk8Lf2HbMQ0SFSWJt02-PzX_DA",
+  "size": 78122442,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.3/PropHedgeReports-Test-Setup.exe"
 }
