@@ -3,6 +3,26 @@
   "notes": [
     {
       "lines": [
+        "**A hedge can now wait at a price.** Arm one at a price the market has not reached and press Wait here. Both sides are placed as orders that sit on their own servers, at the same point, each with its stop and its target already on it. Nothing is open while it waits. Whichever side the market takes first, the other goes straight to the market to answer it, so you are never left holding one leg. If the market takes both at once, that is one hedge and it is recorded as one.",
+        "**A waiting hedge can be moved, and called off from either end.** Drag its entry line on the chart in the terminal and both orders move together, keeping the distances you set. Press Cancel on the strip and both come off their servers. Settings holds how long one may wait before it gives up on its own, and it waits indefinitely unless you say otherwise.",
+        "**It works on both kinds of terminal.** Until now a hedge could only be left waiting on a terminal running TradeDesk. A terminal driven through its own Order window can now do it too: placed, moved to another price, and called off the same way.",
+        "**Both sides of a hedge now leave together.** They used to be prepared one after the other and could reach their brokers as much as four seconds apart, which is four seconds of a hedge that is not hedged. Everything slow now happens before anything is sent, so the two orders go within a millisecond of each other. Measured on real terminals: between a tenth and a seventh of a millisecond, whichever way each terminal is driven.",
+        "**When one side of a waiting hedge is taken, the other now follows in about two seconds** instead of fourteen. Most of that fourteen was the application looking in the wrong place for its own order.",
+        "**The record says exactly when each order went.** Open a hedge and its history shows the moment each of the two orders left, so you can see for yourself that both sides went together rather than taking our word for it.",
+        "**A plan carries one hedge at a time.** That holds however the position arrives, including when you open it yourself in the terminal, and it counts every account the plan has held rather than only the current one. Two different plans still run their own hedges side by side, untouched by each other.",
+        "**A position you open yourself is hedged as it fills**, rather than up to thirty seconds later when the next pass came round.",
+        "**The calculator says why it will not arm.** Press Arm on a plan it cannot accept and the reason now appears and stays on the screen: which price is on the wrong side of which, or what about the machine is in the way. It used to leave the button exactly as it was and say nothing at all.",
+        "**Driving a terminal through its own Order window is reliable now.** Arming used to fail about every other attempt on a slow terminal, with a message that named no cause. Several other faults on that route were found and fixed at the same time: an order the market had taken being reported as a cancel that failed, a price the market crossed while the window was opening being refused with a message about a button, and closing a position taking five seconds where it now takes under two.",
+        "**A terminal you drive by hand is never sent an order.** That is what driving it by hand means, and the one place it could have happened is closed.",
+        "**A way of driving a terminal that could never work for that account is greyed out on the Sources page**, with the reason, instead of being accepted and refused later when you arm.",
+        "**When Windows refuses an action on a terminal, the hedge's row says what happened in words** rather than showing an error nobody can read.",
+        "**Part of a leg closing is no longer treated as the leg closing.** The hedge says what happened and leaves both positions where they are.",
+        "**Smaller things.** One terminal that cannot be read no longer stops the others being read, and the header no longer claims nothing has been read for days while it is reading. The list of terminals keeps up with what the application does to them. Choosing an instrument only one of your two accounts trades says so, instead of blaming the account. Terminals the application starts stay open when it closes, with your charts and your account where you left them. Closing a hedge from the strip is written down like every other order. And the calculator can be opened by address and its size suggestions reached from the keyboard."
+      ],
+      "release": "2.11.0"
+    },
+    {
+      "lines": [
         "**Nothing opens a window on your MetaTrader terminals unless you have just asked for something that needs it.** You will have seen dialogs appear and disappear on your screen, seemingly at random. What they were was a check confirming the application can find the buttons in the Order dialog on your build of MetaTrader, and it ran every time the terminals were looked at, which is every thirty seconds. On a terminal where that check does not succeed it ran again on every pass. It now happens in two places only: when you set a terminal's route, and when you arm a hedge. Both are things you are doing, so a window opening is something you are expecting.",
         "**And a terminal driven through the expert is not asked about that at all.** It never uses the Order dialog: orders, closes and stop changes all go through the expert. One of your terminals was being refused for want of a check that did not apply to it.",
         "**Updating tells you where it has got to, and roughly how much longer.** The bar moves the whole way through instead of sitting still, and what it leans on is how long installing has actually taken on your computer rather than on somebody else's. Beside it is the time so far. Without those two numbers there is no way to tell a slow computer from a stuck one, which is why people were refreshing the page and losing the window.",
@@ -59,19 +79,13 @@
         "**New versions are found within the hour** rather than the next day. You can change how often on the Settings page, under Reading."
       ],
       "release": "2.9.0"
-    },
-    {
-      "lines": [
-        "Choosing an account in the calculator no longer waits on your agreement. Working out a size sends nothing to any broker, so there was nothing there to agree to. You are asked when you arm a hedge instead, and only for a terminal the product would place the order through itself. A terminal left on Not driven, or set to By hand so that you press Buy yourself, is never asked at all."
-      ],
-      "release": "2.8.5"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-12T14:29:24.697640Z",
-  "release": "2.10.7",
-  "sha256": "ccfa27ab4bf9a01141fa2af65c29b9582908fd1c5abd811799374aa799bd3652",
-  "signature": "tUWliXLNG0LdSGgY9joh38j1Wf8phteyogTH8A7NwnUiE3p--1Au8lH56hPj138vE1gE-vjqsuPfkvTJcDDICg",
-  "size": 102882335,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.10.7/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-14T17:05:41.080324Z",
+  "release": "2.11.0",
+  "sha256": "b0307b8a68f116364ed72cc6f3e4a2929742def8f4d71c751e1592aa0e86e327",
+  "signature": "F7B6pqKVctn6-bB3IkHAL4NrvMkOTndD8bWuVoDRz8tSajD5m76iREaiFnh5MNoJG7ESmmuYPoRWaNMH_ovoAw",
+  "size": 78165053,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.11.0/PropHedgeReports-Setup.exe"
 }
