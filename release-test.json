@@ -3,6 +3,30 @@
   "notes": [
     {
       "lines": [
+        "**Instruments whose name carries a longer tag are recognised again.** Some brokers add a word to the end of a symbol rather than a letter or two: IFC Markets writes gold `XAUUSD.BOOK`. The application read a tag of one or two characters and not a word, so on those accounts every trade under the name was skipped. There were no positions, no hedges, and the calculator offered no instruments and said no prop account had been read, on an account whose balance was on the screen beside it. Nothing was lost while that was happening: your trades were still recorded, and they come back with everything built on them the first time this version reads your terminal.",
+        "**And where a name genuinely cannot be placed, the calculator says so.** It used to send you to add a MetaTrader terminal, which is no help when the terminal is running and the account is read. It now tells you what happened and points at Settings, Catalogues, where you can say what the name means. One answer there settles every trade under it."
+      ],
+      "release": "2.12.1"
+    },
+    {
+      "lines": [
+        "**A broker trade is no longer counted against two plans at once.** If one broker account hedged more than one prop account, a single ticket could be attributed twice. Everything built on the broker side was affected: your realised cash, each plan's result, the cost pages and the export. It is corrected, and the figures now add up to what your accounts actually traded. Nothing you recorded was changed; the same trades are simply counted once.",
+        "**The hedge ratio comes from money you name, not from a setting.** When you record a plan you now say what you are willing to spend at the broker to pass each stage, and the ratio follows from that: what is left of the budget over what is left to the target. The plan's chain shows each stage's budget and how much of it the hedging has used, and you can change a stage's figure from there. The old ratio setting is gone, and the Catalogue tab now holds only what the firms publish.",
+        "**A funded account has a control of its own.** There is no pass point to aim at, so instead of a ratio you name what you are willing to spend at the broker over the account. The rail marks the band where that cost comes back whichever way the account goes, whether it reaches a payout or is lost, and underneath it says what the broker pays, what reaches you from the first payout, what the broker keeps if the account dies, and how many accounts it takes to earn the cost back and double it.",
+        "**On a funded account, the profit share and the waiting periods follow the plan.** Your firm pays a bigger share on later payouts, and an account it issues after a payout used to start that ladder again: 75% where the terms say 80%, with the first payout's waiting period offered to you a second time after you had already served it. The share, the waiting period and the trading-day count are the plan's now. The withdrawal figure also follows what reaching it cost, including the refund that arrives after the account does.",
+        "**Today's drawdown floor is measured from the balance the day opened at.** It used to be measured from whatever the balance happened to be the first time the application looked, which on a day that had already traded was the wrong figure. It is read from the account's own deals now. The calculator also says which floor a trade would spend, the day's or the whole allowance.",
+        "**When you are trading a challenge to fail, the target can go at the balance you bought the account at.** Beside each choice is what your broker account can carry against it, which is the reason to choose between them: the nearer target caps what a winning trade costs you, so a smaller broker account can carry a larger hedge.",
+        "**The calculator shows what a trade costs before you take it.** Each terminal's spread in money, its commission, what each side comes to and what both come to together, against what the trade risks, so a stop too tight to be worth trading is visible before it is placed. It also says what your ratio will actually come to once both spreads are paid. Both outcome boxes can be read backwards: name what the broker leg should return, or what you are willing to pay if the prop account wins, and the ratio and both lot sizes are worked out from it.",
+        "**Every hedge says how closely it mirrored.** The ratio it was placed at, the ratio that arrived, and where the difference went. A hedge whose broker side was several tickets draws each of them, with its own entry, exit and size.",
+        "**The trading desk on the chart can look after positions it did not open.** Press Adopt and it takes on a position you opened yourself, with the same trailing stop and the same protection as one it placed. Several faults in the desk are fixed as well: it no longer reports chains that are not open, its labels keep their last words, a stop or target you move on one leg always reaches the other, and an order left resting on the chart is cancelled at the broker rather than only removed from the screen.",
+        "**The reports have moved to one place each.** The Overview now carries the cash ledger and both growth charts beside the figures they explain, and the Plans page is the plans: the cards, the chain, and the one thing each needs. The Excel export has a sheet for your plans and one for every purchase, refund and payout, and each hedge row says which account and which plan it belongs to. The per-pair cash column no longer charges every pair the whole portfolio's fees, so its rows can be added up.",
+        "**Setting a terminal up is clearer, and arming says more.** The Sources page marks which way of driving a terminal suits the kind of account it holds and says why, a terminal carrying an older desk offers to update it, and a new portable terminal always gets the shortcut that starts it in portable mode. You can also say what a lot costs in margin on a broker account: the application will not arm a hedge without that figure, it can only measure it while something is open, and a brand new account has nothing to measure yet.",
+        "**A great many smaller things.** A page with nothing on it says so and stops instead of drawing an empty copy of itself. The cash ledger names the plan each movement belongs to, and dates purchases and payouts when the money moved rather than when you typed them in. A stage that spends more than its budget says by how much. Percentages say what they are a share of. A hedge is only queried when two positions really were open on the prop account at once. And the floating calculator no longer covers the buttons on the last card."
+      ],
+      "release": "2.12.0"
+    },
+    {
+      "lines": [
         "**A hedge can now wait at a price.** Arm one at a price the market has not reached and press Wait here. Both sides are placed as orders that sit on their own servers, at the same point, each with its stop and its target already on it. Nothing is open while it waits. Whichever side the market takes first, the other goes straight to the market to answer it, so you are never left holding one leg. If the market takes both at once, that is one hedge and it is recorded as one.",
         "**A waiting hedge can be moved, and called off from either end.** Drag its entry line on the chart in the terminal and both orders move together, keeping the distances you set. Press Cancel on the strip and both come off their servers. Settings holds how long one may wait before it gives up on its own, and it waits indefinitely unless you say otherwise.",
         "**It works on both kinds of terminal.** Until now a hedge could only be left waiting on a terminal running TradeDesk. A terminal driven through its own Order window can now do it too: placed, moved to another price, and called off the same way.",
@@ -61,31 +85,13 @@
         "**An empty price now looks empty.** The entry read 0.0 when there was nothing in it, which looks like a price somebody typed rather than a box waiting to be filled. Arm also waits now, instead of offering to run its checks on a hedge that has no prices in it yet."
       ],
       "release": "2.10.1"
-    },
-    {
-      "lines": [
-        "**Uninstalling can no longer take your records without asking.** It has always offered to delete them and kept them unless you said otherwise, but an uninstall started from a command line met that question with nobody there to answer it. It now keeps everything in that case. Removing a test build can never touch the records of the ordinary one, whichever way it is removed.",
-        "**A failed update keeps its own explanation.** The installer's log is what the update window offers to copy and send on, and the next check for a new version was tidying it away within the hour.",
-        "**What is new in a release now reads as it was written**, with each item's opening line standing out, instead of arriving as one block of plain text."
-      ],
-      "release": "2.10.0"
-    },
-    {
-      "lines": [
-        "**The application opens again.** Version 2.8.5 went out without its screens. It started, read your terminals and kept your record safe, but showed an empty window. Nothing in your record was affected, and this release puts the screens back.",
-        "**You can correct a hedge the application paired for you.** Open it and press Correct the legs to say which broker tickets really answered that trade: swap one for another, add a ticket you opened later to top the leg up, or drop one you closed and replaced. A ticket you take out is counted as your own trading instead, so nothing goes missing from your figures. Undo my correction hands the hedge back at any time.",
-        "**Updating happens in one window, and tells you how it went.** It lists what is new, shows the install while it runs, and says plainly if it did not work: what went wrong, what the installer itself wrote, and a button that copies all of it so you can send it on. A failed update changes nothing on your computer and you carry straight on with the version you were already using.",
-        "**The page you were reading comes back in the same tab** after an update, instead of a second one opening beside it.",
-        "**New versions are found within the hour** rather than the next day. You can change how often on the Settings page, under Reading."
-      ],
-      "release": "2.9.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-14T17:02:25.644744Z",
-  "release": "2.11.0",
-  "sha256": "98ae54322ce9c02228988804630d071a2b2be6d449b9c14b3baab01598ff9591",
-  "signature": "lwqNw92sraWvDmFWQM7XsVbaMNEhF_WzS2lLRcqQCteHgfhnZ6mtpFDftutlrwBPWcKjO5FTyAhKNhsCpjHCAQ",
-  "size": 78185908,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.11.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-16T11:04:35.834757Z",
+  "release": "2.12.1",
+  "sha256": "bac325fe72692f791af029656b3648b35914864d174107a02c4945736ba84b46",
+  "signature": "ZuQbe-5VrBLpcdUZvb-H-NMncFmegtuZWNBoiYUZzVF5aEUAvMDqJ9enpDC7oyFMO8hP2LbwUrnyVJxrpijGBg",
+  "size": 78312580,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.12.1/PropHedgeReports-Test-Setup.exe"
 }
