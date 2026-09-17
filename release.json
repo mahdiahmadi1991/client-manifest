@@ -3,6 +3,27 @@
   "notes": [
     {
       "lines": [
+        "**On a funded account, the profit you have made is now valued at the share a payout pays you** rather than at what the challenge allowance cost. A winning funded hedge was being reported as a loss: one worth $297.12 on the prop side against $98.64 at the broker read as -$52.21, and it is +$124.20. The share follows your plan's ladder, so a second funded account is valued at the rate the firm actually pays on it. The break-even ratio is unchanged and still means what it says, and the figure a payout is measured against now follows what reaching the account has cost instead of staying at whatever it was the day the account arrived.",
+        "**The desk on your chart has tabs now, and one of them lists what is open.** Positions shows every position on the instrument with its stop, its size and what it is worth, and lets you take one into the chain or release it without touching the others. Settings holds the rest: the theme, the colours, and which way the trailing stop follows.",
+        "**The desk draws the chart's lines itself.** You can drag the chain's stop and its target the way you drag anything else, and a position you gave a level of its own gets a line of its own with its ticket on it. Each line says what reaching it is worth: the money, the share of the balance, the distance in points, and what the chain stands to make against what it risks. The area between the stop and the target is shaded, so you can see both at a glance. Dragging on the average line starts a new line instead of moving the average, dragging a waiting entry no longer moves a position's stop that happens to sit at the same price, and the figures keep up when you move the chart.",
+        "**A stop or target you set yourself is kept.** On every position in the chain, and on the ones you open afterwards. A position you closed by hand now counts as part of what the chain has banked, so the average line moves by what you took off and the bar shows it beside your open result.",
+        "**You can size a trade by what you are willing to lose.** The desk's volume box takes lots, a share of the balance, or an amount of money, and always shows the lots it comes to.",
+        "**The trailing stop keeps running after the price reaches your target.** The target moves ahead with the trade instead of closing it, and the stop is what ends the trade. There is also a second way to trail, which follows the chart's own range below the highest bar rather than sitting a spread behind the best price. You choose between them on the desk's Settings tab.",
+        "**The desk sets your chart up when it loads, and gives it back when it comes off.** What the chart shows, candles, the newest bar at the middle of the screen, and a vertical scale you can drag instead of one that springs back. Settings has a button to do it again, and a dark or a light theme for the chart. With a theme on, the desk wears colours made for it: its border is the chart's grid, its text the chart's own, and its green and red the candles'. Turn the theme off and your usual colours come back, exactly as they were.",
+        "**Your desk settings survive an expert update**, the panel stays above anything drawn on the chart, and its box and lines are readable on a dark chart.",
+        "**Setting a terminal up no longer leaves the desk unable to talk to the product.** The settings file it saved was written in a way that sent the desk looking for a connection that does not exist.",
+        "**The expert is asked for where it is used.** A hedge whose prop leg you open yourself no longer asks you to attach TradeDesk in the prop terminal. It is always needed in the broker terminal, where it guards the leg even if the product stops running, and in the prop terminal only when the product places that leg through it.",
+        "**The calculator says what a trade costs to get into, in your own money.** The broker's charges in full, and the prop account's at the ratio the two legs actually trade at, because winning a prop dollar back costs you that much. A funded account still counts the whole charge.",
+        "**The calculator shows which way the trade goes.** The side is in the colour of the header, the footer and the Arm button, so a hedge set up the wrong way round is visible before it is armed. The figures carry colour where it means something as well: each leg's side, the hedge ratio, money that is a gain or a loss, and the stop and target boxes.",
+        "**The calculator's entry field works again, and lines up.** NOW and the follow button do something when pressed, and they stay put when the up and down arrows appear beside them. Typing a new entry price moves the stop and a target you typed with it and keeps the distances, where before an entry typed past the stop left the trade with no stop at all. The field lines up with the stop and the target, those two labels are red and green again, and gold is marked as the recommended instrument in the picker and listed first among the ones both terminals watch.",
+        "**A leg left standing on its own is closed.** If one side of a hedge cannot be opened, the side that did open comes off immediately instead of being left there alone. A position you opened by hand is never closed this way.",
+        "**Arming warns you when a market is about to close**, an hour before by default and adjustable in Settings. Refusing inside the last fifteen minutes is unchanged. The terminals are read every fifteen seconds now, and every five while a position is open, both on the Settings page.",
+        "**Two things on the hedge ledger.** A column filter works every time rather than only the first: choosing a second account after a first found nothing used to find nothing either, and clearing the filter did not bring the whole ledger back. And in a narrow window the first column no longer has its text cut in half when you scroll sideways."
+      ],
+      "release": "2.13.0"
+    },
+    {
+      "lines": [
         "**Instruments whose name carries a longer tag are recognised again.** Some brokers add a word to the end of a symbol rather than a letter or two: IFC Markets writes gold `XAUUSD.BOOK`. The application read a tag of one or two characters and not a word, so on those accounts every trade under the name was skipped. There were no positions, no hedges, and the calculator offered no instruments and said no prop account had been read, on an account whose balance was on the screen beside it. Nothing was lost while that was happening: your trades were still recorded, and they come back with everything built on them the first time this version reads your terminal.",
         "**And where a name genuinely cannot be placed, the calculator says so.** It used to send you to add a MetaTrader terminal, which is no help when the terminal is running and the account is read. It now tells you what happened and points at Settings, Catalogues, where you can say what the name means. One answer there settles every trade under it."
       ],
@@ -77,21 +98,13 @@
     {
       "lines": [],
       "release": "2.10.2"
-    },
-    {
-      "lines": [
-        "**The calculator no longer goes quiet when you change the instrument.** Changing it empties the entry and the stop on purpose, because a price on gold is not a price on a currency pair. What went wrong was everything after that: the right-hand side turned into grey bars and stayed that way, through a restart and through an update, because the question it was waiting on is saved along with everything else. It now says which of the two prices it still needs, and fills back in the moment you type it.",
-        "**The figures you are reading always belong to the instrument named above them.** When the instrument changed, the previous one's answer stayed on screen underneath the new name: its levels, its lots, and the order it was offering to place. The application could not have placed that order itself, and nothing in your record was changed by it. But the numbers were readable and copyable, so if you sized a hedge straight after switching instruments it is worth checking that what you placed is what you meant.",
-        "**An empty price now looks empty.** The entry read 0.0 when there was nothing in it, which looks like a price somebody typed rather than a box waiting to be filled. Arm also waits now, instead of offering to run its checks on a hedge that has no prices in it yet."
-      ],
-      "release": "2.10.1"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-16T11:08:32.987308Z",
-  "release": "2.12.1",
-  "sha256": "546f5aea82f7cc5297d46c06f24323fadc639c19708e5cf4ab0add891898f944",
-  "signature": "G_lTMQGD9haDmPHGq9W2pWXmftm8IbwPiAzxHxCNG8L9yhQyc9lVd7wKIF-ISq47t7bRxNLKLv13e6tFAGFGAg",
-  "size": 78301443,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.12.1/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-17T11:34:08.466869Z",
+  "release": "2.13.0",
+  "sha256": "63de3553800d338ab406bbb00d92dbc5ed48d65e7e01e2f228d5f10a2faf9a67",
+  "signature": "oJlbC0z12gF-iRq9XiGj1-giHpaj49r1lWaRhkdrXM-Yx2md61rmfZ1W0Ee9EeAy1Xlyr6uTYjW-kVI_UDXoCA",
+  "size": 78409627,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.13.0/PropHedgeReports-Setup.exe"
 }
