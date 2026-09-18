@@ -3,6 +3,12 @@
   "notes": [
     {
       "lines": [
+        "**A funded account is no longer reported as having gone through its drawdown floor because a terminal answered with nothing while it was starting.** One such reading was spending the account's entire allowance, 833% of it, and the plan asked you to confirm it was over while the account was in profit and trading. The same reading no longer counts against what you have left today either, and it is kept out of the balances that prove a hedge's result."
+      ],
+      "release": "2.14.1"
+    },
+    {
+      "lines": [
         "**A plan is drawn as a straight rail of its accounts, and each stop says what it did to your money.** Green where a challenge passed or an account paid out, red where one was lost, brass on the account being traded now, and the line between two stops wears the colour of what came before it. The account you are trading has a panel of its own under the rail, with its standing at full size, and clicking any stop takes you to that account's own hedges. A chain of nine accounts reads as easily as one.",
         "**The hedge calculator sizes a funded account whose plan has already earned its cost back**, instead of refusing with \"the broker side cannot be sized\". On a funded account the rail, the split line and \"each win nets\" now use the same profit share as the valuation, which is the share your firm pays on the plan's next payout: 90% on a seventh Class B account, not the 75% of the first. A refund already recorded is no longer added again under \"from payout one\".",
         "**Money made on a funded account is valued at the share your firm actually pays on it**, everywhere the calculator shows what a trade would return. On a challenge account, a hedge's result is what moved in your broker account and nothing else, because a challenge balance is never money you can withdraw. What a lot costs in margin is read from the terminal instead of being typed in.",
@@ -105,17 +111,13 @@
     {
       "lines": [],
       "release": "2.10.4"
-    },
-    {
-      "lines": [],
-      "release": "2.10.3"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-18T02:48:22.218286Z",
-  "release": "2.14.0",
-  "sha256": "9badb02a797622422f1c26c754c77947480d2a3418975a1b04d65c137b02bd68",
-  "signature": "q6rvYHpK0XjF_7MNisygwZSGxgoR31Iw29yxGtf5ssYrsfA1cTiYo_jQZSeeMW_-0xOsjJRnlfEuJv68VAKLBg",
-  "size": 78545442,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.14.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-18T07:21:36.824387Z",
+  "release": "2.14.1",
+  "sha256": "443408ef05ade375224dd8172ef922bc292dca3859e910ef539b178c3979b803",
+  "signature": "ftn717rdGQwtvzUPqYyld5JBPUDUBw9NuOu9LjRKztdkakA3mO08f2mpjUC_nkk6AiDf5C12sRyljuO_ZU1zCQ",
+  "size": 78534878,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.14.1/PropHedgeReports-Test-Setup.exe"
 }
