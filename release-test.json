@@ -3,6 +3,21 @@
   "notes": [
     {
       "lines": [
+        "**A plan is drawn as a straight rail of its accounts, and each stop says what it did to your money.** Green where a challenge passed or an account paid out, red where one was lost, brass on the account being traded now, and the line between two stops wears the colour of what came before it. The account you are trading has a panel of its own under the rail, with its standing at full size, and clicking any stop takes you to that account's own hedges. A chain of nine accounts reads as easily as one.",
+        "**The hedge calculator sizes a funded account whose plan has already earned its cost back**, instead of refusing with \"the broker side cannot be sized\". On a funded account the rail, the split line and \"each win nets\" now use the same profit share as the valuation, which is the share your firm pays on the plan's next payout: 90% on a seventh Class B account, not the 75% of the first. A refund already recorded is no longer added again under \"from payout one\".",
+        "**Money made on a funded account is valued at the share your firm actually pays on it**, everywhere the calculator shows what a trade would return. On a challenge account, a hedge's result is what moved in your broker account and nothing else, because a challenge balance is never money you can withdraw. What a lot costs in margin is read from the terminal instead of being typed in.",
+        "**A funded account is no longer reported as blown because of a reading taken while its terminal was still starting.** If a plan of yours was asking you to confirm it was over, it will stop. A funded plan whose chain has earned its cost back is told so, instead of \"the profit has reached the $0.00 you set\", and an account that has gone quiet past the firm's limit is told how long, rather than \"0 days left\". The budget on a stage that has already passed or failed can no longer be edited.",
+        "**The calculator's boxes take what you type.** The risk in money can be typed into again: entering 740 used to leave the box reading $7.02, because it reformatted itself between keystrokes, and a figure typed into any money box is no longer rewritten under you while you are still writing it. Typing is much faster, and the entry price takes the number of decimals the instrument actually quotes to.",
+        "**The calculator says where the money goes before you arm.** The account picker and the bar above Arm both name the account each leg will be placed on, and that bar keeps the same arrangement whatever width the calculator is at.",
+        "**Arming asks for your agreement where you are.** On a real account it opens a dialog that names the account and says what agreeing permits, where it used to refuse the press and send you to a terminal row that had no such button. And when the broker's margin figure is missing, arming now says to put the instrument in the broker terminal's Market Watch, which is what makes the figure appear, instead of pointing at a Sources box that no longer exists.",
+        "**A terminal or an account can be removed from Sources.** Removing a terminal also removes its reads from the Evidence tab and your agreement to restart it, so adding it again asks before it closes anything; the accounts and deals it imported are kept. Removing an account takes everything it brought in, shows you what would go before anything does, and is remembered, so the next read of its terminal does not bring it back. The Accounts tab lists what is being skipped, with a button to read it again.",
+        "**The Sources page remembers which tab you were on**, its tabs can be linked to the way the Settings tabs already could, and they have room around them. The Plans page no longer flashes \"No plan yet\" while the plans are still being fetched.",
+        "**The licence is confirmed about every six hours.** After a day without reaching the internet the application says so, instead of after three weeks; if it cannot reach the licence list for two days it locks, and connecting once clears it. A licence can now be issued for a set number of days: when one runs out the application says so on a screen of its own, with the day it ran until, and a licence with a week or less to run says so while you can still do something about it. Your figures and both exports are never affected, and licences issued before this release run until 30 September 2026."
+      ],
+      "release": "2.14.0"
+    },
+    {
+      "lines": [
         "**On a funded account, the profit you have made is now valued at the share a payout pays you** rather than at what the challenge allowance cost. A winning funded hedge was being reported as a loss: one worth $297.12 on the prop side against $98.64 at the broker read as -$52.21, and it is +$124.20. The share follows your plan's ladder, so a second funded account is valued at the rate the firm actually pays on it. The break-even ratio is unchanged and still means what it says, and the figure a payout is measured against now follows what reaching the account has cost instead of staying at whatever it was the day the account arrived.",
         "**The desk on your chart has tabs now, and one of them lists what is open.** Positions shows every position on the instrument with its stop, its size and what it is worth, and lets you take one into the chain or release it without touching the others. Settings holds the rest: the theme, the colours, and which way the trailing stop follows.",
         "**The desk draws the chart's lines itself.** You can drag the chain's stop and its target the way you drag anything else, and a position you gave a level of its own gets a line of its own with its ticket on it. Each line says what reaching it is worth: the money, the share of the balance, the distance in points, and what the chain stands to make against what it risks. The area between the stop and the target is shaded, so you can see both at a glance. Dragging on the average line starts a new line instead of moving the average, dragging a waiting entry no longer moves a position's stop that happens to sit at the same price, and the figures keep up when you move the chart.",
@@ -94,17 +109,13 @@
     {
       "lines": [],
       "release": "2.10.3"
-    },
-    {
-      "lines": [],
-      "release": "2.10.2"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-17T11:30:59.035560Z",
-  "release": "2.13.0",
-  "sha256": "98b17e1f2da93777120bfb8911940b3f16e521a314880deca6772326f5d248a1",
-  "signature": "R1-Okb0T3oUwIcDmlPJbERtSYTv5sWjwsd5RTEka7_bwXePXlUFMGQJyyI43SzcQS1TziiAR9fK9qqZCBYboBQ",
-  "size": 78432074,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.13.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-18T02:48:22.218286Z",
+  "release": "2.14.0",
+  "sha256": "9badb02a797622422f1c26c754c77947480d2a3418975a1b04d65c137b02bd68",
+  "signature": "q6rvYHpK0XjF_7MNisygwZSGxgoR31Iw29yxGtf5ssYrsfA1cTiYo_jQZSeeMW_-0xOsjJRnlfEuJv68VAKLBg",
+  "size": 78545442,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.14.0/PropHedgeReports-Test-Setup.exe"
 }
