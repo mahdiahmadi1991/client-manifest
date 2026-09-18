@@ -3,6 +3,13 @@
   "notes": [
     {
       "lines": [
+        "**The application installs and runs again on older computers.** A library that arrives with the MetaTrader package had raised what it needs to an instruction set no processor before 2008 has, so on an older machine the installation finished and the application then refused to start, every time, with a message blaming something that was not the problem. It is back to what it has always needed, which every 64-bit computer since 2004 has. The same applies to a virtual machine whose host presents an older processor.",
+        "**If a computer really is too old for it, the installer says so before it installs anything** rather than leaving you with a copy that cannot start, and it says what to change when the machine is a virtual one."
+      ],
+      "release": "2.14.2"
+    },
+    {
+      "lines": [
         "**A funded account is no longer reported as having gone through its drawdown floor because a terminal answered with nothing while it was starting.** One such reading was spending the account's entire allowance, 833% of it, and the plan asked you to confirm it was over while the account was in profit and trading. The same reading no longer counts against what you have left today either, and it is kept out of the balances that prove a hedge's result."
       ],
       "release": "2.14.1"
@@ -107,17 +114,13 @@
     {
       "lines": [],
       "release": "2.10.5"
-    },
-    {
-      "lines": [],
-      "release": "2.10.4"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-18T07:21:36.824387Z",
-  "release": "2.14.1",
-  "sha256": "443408ef05ade375224dd8172ef922bc292dca3859e910ef539b178c3979b803",
-  "signature": "ftn717rdGQwtvzUPqYyld5JBPUDUBw9NuOu9LjRKztdkakA3mO08f2mpjUC_nkk6AiDf5C12sRyljuO_ZU1zCQ",
-  "size": 78534878,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.14.1/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-18T13:43:25.258488Z",
+  "release": "2.14.2",
+  "sha256": "e05da4ed175c21dae6a058837e0f6e937e9948d0b5bebacddb384042747debb7",
+  "signature": "X-qpbljNLe9d1w39EtBWgdUoLhCCDcTWGXHOuSFs-m4FKHqYQX1edfZfC0Su7d28TaWxsCJT-NSe3Hax_hU8Dg",
+  "size": 78581591,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.14.2/PropHedgeReports-Test-Setup.exe"
 }
