@@ -3,6 +3,21 @@
   "notes": [
     {
       "lines": [
+        "**One journal on every computer you trade from.** Turn it on in Settings, Journals, and your record is kept the same on each machine through a hidden folder in your own Google Drive. It is sealed with a passphrase only you know: nobody here ever sees it and nobody can recover it. Each machine still reads only its own terminals, and nothing about you or your machines reaches us. The page says which Google account the copy goes to and how much room that account has left, so a Drive that is filling up is something you hear about before it stops the copy rather than after.",
+        "**When two of your computers change the same thing, you decide which is right.** Both versions are kept and the question is put to you; neither is thrown away on its own. Your answer then reaches every machine rather than only the one you gave it on. A computer that already holds a record of its own can join and keep it, and whatever only that one had is carried across. Sources lists the machines sharing the journal, what each is running and when it last spoke. One that is gone for good can be forgotten. The header says how it stands and speaks only when something needs you: a computer you have switched off is not a warning, and the Journals page says which of them has not caught up yet.",
+        "**Hedging from two computers at once is now safe.** Arming checks your other machines first, so two of them can never hedge the same plan, and the refusal says which one got there first. The checks count what those machines already have at risk on the same accounts, so two of them cannot between them break the firm's daily limit or close each other's hedge out. A hedge belongs to the machine that armed it: only that machine can fire it, move it or close it, and the others show it with that machine's name beside it. Stopping automatic actions stops them everywhere, and the status says where it was stopped from.",
+        "**The trailing stop is the desk expert's now, and it is off until you turn it on.** Four rules to choose from in Settings. It follows the broker leg only, so nothing is ever moved on a prop account, and the shadow stop that used to close a leg early is gone. What each rule did on eight months of real bars is written down rather than guessed at.",
+        "**Every screen that reports a hedge separates what you chose from what it cost.** Leaving one leg running after its partner closed is a decision, and it is now reported as one instead of arriving as a cost you never paid. It is told apart from an accidental parting on evidence: a stop or target seen to move before the other leg closed, or a gap wider than your own review threshold. Reports say whether running on has paid you: how often you did it, how often it worked, what it earned against what it gave back, and how much of what was on the table you kept. Every position now records the best it was ever worth while it was open, which is what that last figure is measured against.",
+        "**Slippage is measured against the price the order actually asked for.** A close triggered by a stop, a target or a stop out is the one fill in this product with a requested price to compare against, so it is exact rather than an estimate. The levels come from the order rather than the deal, which is where they have always been; the fifty-six entry levels this product had stored as zero were read from the wrong record.",
+        "**The hedges page counts every settled hedge.** It counted only the ones nobody had left a question on, so a closed hedge waiting to be read through was missing from the page's own total while every other screen included it. Money that was earned weeks ago no longer appears the day somebody presses Accept.",
+        "**An instrument your terminal is not watching is no longer armed against.** It has no price and no stop rules there, and those zeros used to read as permission. The product now puts the instrument into Market Watch itself where the desk expert is attached, says so on the arming checks when it does, and asks you to add it by hand where no expert is there to do it.",
+        "**The accounts table says who each account is registered to**, and Accounts, Hedges and Plans can be narrowed to one person's accounts. The name stays on your own machines and is never in a journal you export.",
+        "**Four things about the shared journal that went wrong and no longer do.** Taking a copy failed while the product was reading your terminals. A change being read at the moment its file moved was skipped instead of read again on the next look. A computer switched off for a long time started again from scratch on every look once it came back, rather than once. And changing the passphrase sent your whole record to Drive a second time. Times on that page are shown in your own clock too, matching the rest of the product."
+      ],
+      "release": "2.15.0"
+    },
+    {
+      "lines": [
         "**The application installs and runs again on older computers.** A library that arrives with the MetaTrader package had raised what it needs to an instruction set no processor before 2008 has, so on an older machine the installation finished and the application then refused to start, every time, with a message blaming something that was not the problem. It is back to what it has always needed, which every 64-bit computer since 2004 has. The same applies to a virtual machine whose host presents an older processor.",
         "**If a computer really is too old for it, the installer says so before it installs anything** rather than leaving you with a copy that cannot start, and it says what to change when the machine is a virtual one."
       ],
@@ -110,17 +125,13 @@
     {
       "lines": [],
       "release": "2.10.6"
-    },
-    {
-      "lines": [],
-      "release": "2.10.5"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-18T13:43:25.258488Z",
-  "release": "2.14.2",
-  "sha256": "e05da4ed175c21dae6a058837e0f6e937e9948d0b5bebacddb384042747debb7",
-  "signature": "X-qpbljNLe9d1w39EtBWgdUoLhCCDcTWGXHOuSFs-m4FKHqYQX1edfZfC0Su7d28TaWxsCJT-NSe3Hax_hU8Dg",
-  "size": 78581591,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.14.2/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-21T05:10:39.418087Z",
+  "release": "2.15.0",
+  "sha256": "23d7b184204908724473f17a55afdae9a6714526ef92e4feca8c3435dfa7fedf",
+  "signature": "N-nVyzX3XQntBfg9IkDRdhz3E0N4GiU7IsUFZXJpL0MGUHCk6IbyBaH-rZ3WGArOJVl2r-4CqC0cdOqjJhNtDA",
+  "size": 78853535,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.15.0/PropHedgeReports-Test-Setup.exe"
 }
