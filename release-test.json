@@ -3,6 +3,16 @@
   "notes": [
     {
       "lines": [
+        "Some hedges showed twice the volume and twice the money they were worth, and said the deals and the balance disagreed about the account. The deals had been recorded a second time on 19 September, when the way an account is referred to changed. Installing this puts the record right and works the figures out again. Your data is copied before anything touches it, as it is on every update.",
+        "The product refuses to arm when the plan already carries a hedge, whether the product placed it or you opened it yourself in MetaTrader, and on any of the plan's accounts. The line beside the button says why it is grey.",
+        "Sizing a hedge counts what the broker account has already put behind the positions it is holding. Sizing one on a broker that is already carrying another plan's hedge no longer reports a margin level the broker would never agree with.",
+        "The target no longer reads wrong in points or in money for the first moment after the calculator opens.",
+        "Positions with no counterpart and an account's ledger fill as you scroll rather than putting you through numbered pages, and Positions with no counterpart can be narrowed to one account."
+      ],
+      "release": "2.17.0"
+    },
+    {
+      "lines": [
         "A licence that runs out while a hedge is open no longer locks you out of it. You can still see what is open, close it, disarm it, or cancel an order that is waiting.",
         "You can enter a new licence key from the About page before the old one expires. It tells you what that key covers before you use it.",
         "Record what you pay to run this, starting with your licence. You choose whether it comes off your result as a step of its own.",
@@ -127,26 +137,13 @@
         "**Smaller things.** One terminal that cannot be read no longer stops the others being read, and the header no longer claims nothing has been read for days while it is reading. The list of terminals keeps up with what the application does to them. Choosing an instrument only one of your two accounts trades says so, instead of blaming the account. Terminals the application starts stay open when it closes, with your charts and your account where you left them. Closing a hedge from the strip is written down like every other order. And the calculator can be opened by address and its size suggestions reached from the keyboard."
       ],
       "release": "2.11.0"
-    },
-    {
-      "lines": [
-        "**Nothing opens a window on your MetaTrader terminals unless you have just asked for something that needs it.** You will have seen dialogs appear and disappear on your screen, seemingly at random. What they were was a check confirming the application can find the buttons in the Order dialog on your build of MetaTrader, and it ran every time the terminals were looked at, which is every thirty seconds. On a terminal where that check does not succeed it ran again on every pass. It now happens in two places only: when you set a terminal's route, and when you arm a hedge. Both are things you are doing, so a window opening is something you are expecting.",
-        "**And a terminal driven through the expert is not asked about that at all.** It never uses the Order dialog: orders, closes and stop changes all go through the expert. One of your terminals was being refused for want of a check that did not apply to it.",
-        "**Updating tells you where it has got to, and roughly how much longer.** The bar moves the whole way through instead of sitting still, and what it leans on is how long installing has actually taken on your computer rather than on somebody else's. Beside it is the time so far. Without those two numbers there is no way to tell a slow computer from a stuck one, which is why people were refreshing the page and losing the window.",
-        "**When an update has finished, the application says so.** It comes back on the new version and confirms which version you are on and what you got. Before this it returned you to a page that looked exactly like the one you left, and whether it had worked was anyone's guess.",
-        "**The update window no longer offers to install a version you are already running.** On some computers a perfectly good update ended with the window asking to install it again, with nothing listed underneath. The application now writes down what became of an update before it hands over, so the copy that comes back can say plainly what happened instead of working it out.",
-        "**If the application does not come back after installing, you are told rather than left watching a bar.** It keeps trying quietly and carries on by itself if it was only being slow, and something outside the installation now starts the application if the installer's own restart did not. The window gives you a way out instead of holding you there. Measured on a slow computer: an install that finished and started nothing was brought back by itself in half a minute.",
-        "**The update window stays one size from beginning to end**, so nothing moves under you between one step and the next, and a long list of changes scrolls inside it.",
-        "**Later now means later on the question about a newly arrived account.** It used to come back on the next page you opened. It waits an hour now, and survives closing the application. Something genuinely new still asks straight away, which is the only reason that question interrupts you at all."
-      ],
-      "release": "2.10.7"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-22T09:03:55.278727Z",
-  "release": "2.16.0",
-  "sha256": "5dd798af899eb49e356e96e63fcaa28e59a9e11ae3a171bcf225823cdbc12a64",
-  "signature": "mDMOTsPU4VL4SDQ51OLMUUKS4QrU_l2lTTN1hDFeMImH9XeVoNjMt2NOHPy-gqKplyMg1qEYdSpe01LtScxpAQ",
-  "size": 78894268,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.16.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-22T11:59:08.497196Z",
+  "release": "2.17.0",
+  "sha256": "05aed2e23dbc1050f322f55fc3da39337807036dd33dd609f4919b70b93d601b",
+  "signature": "_K9TZdihMNLwCdnSrMFczmgLVnKezuHKCGURowxkxFwZWwzqG-nQu2a6Umfifhj7xxnCw8YJGoRsZJLbbiw6Dg",
+  "size": 78908371,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.17.0/PropHedgeReports-Test-Setup.exe"
 }
