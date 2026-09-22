@@ -3,6 +3,25 @@
   "notes": [
     {
       "lines": [
+        "A licence that runs out while a hedge is open no longer locks you out of it. You can still see what is open, close it, disarm it, or cancel an order that is waiting.",
+        "You can enter a new licence key from the About page before the old one expires. It tells you what that key covers before you use it.",
+        "Record what you pay to run this, starting with your licence. You choose whether it comes off your result as a step of its own.",
+        "A target at the pass point clears what the trade really costs to open and close. It used to allow for one commission where two are charged, and for none at all on an account that had not traded yet.",
+        "Switching a trade between buy and sell moves the stop and the target to the right side of the entry. They used to stay where they were, which swapped what each one meant.",
+        "The Hedges page narrows to one prop account.",
+        "A terminal you make appears on the Terminals tab straight away. You can also correct what a plan cost after recording it.",
+        "The product refuses to arm while the plan already holds a position, including one you opened yourself in MetaTrader. The wait before firing counts down where you can see it, you can cancel it, and the calculator is locked once a hedge is armed.",
+        "A plan shows what is standing on its funded accounts, and your share of it after the split, beside what the plan has cost you. A plan that reads down while its account is up now says why.",
+        "One terminal that stops answering no longer holds up the others. A terminal the product cannot read says why, rather than quietly slowing everything down.",
+        "When a terminal changes account, the product notices and points itself at the new one within half a minute. It used to go on driving the old one. Every failing check that a restart can clear now offers the button that does it, and a terminal the product starts comes back the way it was running.",
+        "The badge in the corner counts the terminals actually being driven, not the ones with a route chosen. A terminal driven through its own windows can now be started and set up from its row, which until now only a terminal on the expert route could. An account's bar carries its balance on the marker, and puts each distance under the end it is measured to.",
+        "The hedge ratio counts what the broker has already taken in on a stage as money that stage can spend. It holds at the price you named, rather than falling every time the account loses: on a $25,000 Class B with $350 set aside for the stage, one hedge was enough to drop the suggestion from 14.00% to 10.99%.",
+        "The risk figure under the calculator's rail is what the position really risks, not what the sizing was asked for. The two come apart whenever you set the lots by hand, and the figure turns red when it is past what your plan allows. Moving a level on one leg now carries only what you choose. A stop still moves the other leg's target and a target moves nothing, so trailing a broker target by hand no longer moves your prop stop. Four switches for it under Settings, Driving the terminals. The calculator also opens with the entry following the market."
+      ],
+      "release": "2.16.0"
+    },
+    {
+      "lines": [
         "**One journal on every computer you trade from.** Turn it on in Settings, Journals, and your record is kept the same on each machine through a hidden folder in your own Google Drive. It is sealed with a passphrase only you know: nobody here ever sees it and nobody can recover it. Each machine still reads only its own terminals, and nothing about you or your machines reaches us. The page says which Google account the copy goes to and how much room that account has left, so a Drive that is filling up is something you hear about before it stops the copy rather than after.",
         "**When two of your computers change the same thing, you decide which is right.** Both versions are kept and the question is put to you; neither is thrown away on its own. Your answer then reaches every machine rather than only the one you gave it on. A computer that already holds a record of its own can join and keep it, and whatever only that one had is carried across. Sources lists the machines sharing the journal, what each is running and when it last spoke. One that is gone for good can be forgotten. The header says how it stands and speaks only when something needs you: a computer you have switched off is not a warning, and the Journals page says which of them has not caught up yet.",
         "**Hedging from two computers at once is now safe.** Arming checks your other machines first, so two of them can never hedge the same plan, and the refusal says which one got there first. The checks count what those machines already have at risk on the same accounts, so two of them cannot between them break the firm's daily limit or close each other's hedge out. A hedge belongs to the machine that armed it: only that machine can fire it, move it or close it, and the others show it with that machine's name beside it. Stopping automatic actions stops them everywhere, and the status says where it was stopped from.",
@@ -121,17 +140,13 @@
         "**Later now means later on the question about a newly arrived account.** It used to come back on the next page you opened. It waits an hour now, and survives closing the application. Something genuinely new still asks straight away, which is the only reason that question interrupts you at all."
       ],
       "release": "2.10.7"
-    },
-    {
-      "lines": [],
-      "release": "2.10.6"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-21T05:14:10.005184Z",
-  "release": "2.15.0",
-  "sha256": "bae93527c41ced3917b41a5fef3f359b0965226b5cc5b4a0e12f2037d112aad4",
-  "signature": "bVGoO8bZKTJk8bYu9C8huqnVR2z3GHrz7jvKPCbn52AuDR8jxvnU7LuH1_GFUQ6O-h5iHvhCpLq3e2eEgEvZCQ",
-  "size": 78833995,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.15.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-22T09:08:24.056515Z",
+  "release": "2.16.0",
+  "sha256": "5e6ce87e9bf92be544c8308edf7b31a9df17612461a551493e759f271a1424ed",
+  "signature": "lV5zF9o4mSjXQPZW9OXiT-u1QnpyINYeuB2kwaNk2VGUfo6FNkI0pB3Nrz2FlHUY1rjnnpe3Ww2vjXO_DUSTBA",
+  "size": 78882793,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.16.0/PropHedgeReports-Setup.exe"
 }
