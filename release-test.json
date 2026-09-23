@@ -3,6 +3,23 @@
   "notes": [
     {
       "lines": [
+        "A hedge no longer closes the leg that is still open when the other one is taken. The two legs sit at the same price on two different feeds, so one of them is always taken a moment before the other, and closing the survivor at that moment was closing it feet from its own target. Two traders lost a challenge to it, thirty and a hundred and forty dollars short of passing. A leg with no target of its own is still closed at once, because nothing else would close it.",
+        "What you arm is what is sent. The lots and the levels you confirmed no longer change between arming and firing, and Arm opens a window showing the exact trade with Fire in it and no countdown. If the market has moved too far from a price you typed, firing is refused with the reason rather than sent at a different size. The setting for what stays fixed while the price moves has gone, because nothing moves any more.",
+        "What an account has left to lose is measured from where it stands now, not from the deepest it has ever been, so an account that has recovered is no longer told it has less room than it has. On a $25,000 account sitting $2,215 down against a floor $3,000 below its opening balance, that is $784.61 rather than $300.61. What was spent at its worst is still reported, and is still what a breach turns on.",
+        "From the second position of a challenge, the suggested hedge ratio is what your hedging has actually returned on that account, moved half a point in the direction the account last went. It used to divide the stage budget every time. The budget still sets the first position, and a challenge that has been reset starts from it again. Filling to the balance you bought the account at moves the ratio the other way, the calculator says when hedges nobody has answered are part of the figure, and the size of the step is a setting under Sizing.",
+        "Where your firm lists one instrument under two names, the calculator sizes and arms against the name your account has actually traded rather than whichever one the terminal listed first. Settings, under Catalogues, shows any account where there is a choice and lets you say which name to use.",
+        "A terminal that has closed with a hedge still open can be started again from Sources. It used to refuse, which left the hedge with nothing watching it and no way to close it.",
+        "The Overview shows what you have earned over time, day by day, week by week or month by month depending on how far back you look. The running total is drawn above what each period earned, and the card names the four parts the total is made of.",
+        "The calculator has a padlock in the stop, the target, the prop lots and the hedge ratio. A locked field stays where you put it: changing the risk no longer moves lots you have set, and moving the entry no longer drags a locked level with it. A locked field turns brass, so you can see at a glance what you have pinned, and which padlocks you close is remembered for next time. Those four fields no longer carry up and down arrows, the stop and the target are wider, and each of them holds its own unit inside the box.",
+        "Reading the price is much faster. Pressing NOW fills the entry in well under a second instead of about two, and the spinner beside it turns while it reads. Following the market is now live: the entry updates the moment the terminal reports that the price has moved, rather than on a timer, and the stop and the target keep their distances as it moves. It stops when you press the toggle again, close the calculator, or leave the page.",
+        "The magic number and the order comment can be set separately for each leg in Settings, and either can be left empty. The desk expert's Positions tab has a switch that takes every position you open on that instrument into the chain by itself. A position this application is managing can now sit in a chain and count towards its average, and the desk never moves its stop or its target.",
+        "An update finishes the job itself. The desk expert this version ships is put on your charts without you pressing anything, and the update window says which terminal it is working on. A terminal you have not set up from here is left exactly as it was, with a line saying so.",
+        "Every table has a height and scrolls inside it, so a long one no longer stretches the page past everything below it. Rows still load as you reach them, and scrolling deep into a list no longer sends you back to the top a few seconds later."
+      ],
+      "release": "2.18.0"
+    },
+    {
+      "lines": [
         "Some hedges showed twice the volume and twice the money they were worth, and said the deals and the balance disagreed about the account. The deals had been recorded a second time on 19 September, when the way an account is referred to changed. Installing this puts the record right and works the figures out again. Your data is copied before anything touches it, as it is on every update.",
         "The product refuses to arm when the plan already carries a hedge, whether the product placed it or you opened it yourself in MetaTrader, and on any of the plan's accounts. The line beside the button says why it is grey.",
         "Sizing a hedge counts what the broker account has already put behind the positions it is holding. Sizing one on a broker that is already carrying another plan's hedge no longer reports a margin level the broker would never agree with.",
@@ -117,33 +134,13 @@
         "**A great many smaller things.** A page with nothing on it says so and stops instead of drawing an empty copy of itself. The cash ledger names the plan each movement belongs to, and dates purchases and payouts when the money moved rather than when you typed them in. A stage that spends more than its budget says by how much. Percentages say what they are a share of. A hedge is only queried when two positions really were open on the prop account at once. And the floating calculator no longer covers the buttons on the last card."
       ],
       "release": "2.12.0"
-    },
-    {
-      "lines": [
-        "**A hedge can now wait at a price.** Arm one at a price the market has not reached and press Wait here. Both sides are placed as orders that sit on their own servers, at the same point, each with its stop and its target already on it. Nothing is open while it waits. Whichever side the market takes first, the other goes straight to the market to answer it, so you are never left holding one leg. If the market takes both at once, that is one hedge and it is recorded as one.",
-        "**A waiting hedge can be moved, and called off from either end.** Drag its entry line on the chart in the terminal and both orders move together, keeping the distances you set. Press Cancel on the strip and both come off their servers. Settings holds how long one may wait before it gives up on its own, and it waits indefinitely unless you say otherwise.",
-        "**It works on both kinds of terminal.** Until now a hedge could only be left waiting on a terminal running TradeDesk. A terminal driven through its own Order window can now do it too: placed, moved to another price, and called off the same way.",
-        "**Both sides of a hedge now leave together.** They used to be prepared one after the other and could reach their brokers as much as four seconds apart, which is four seconds of a hedge that is not hedged. Everything slow now happens before anything is sent, so the two orders go within a millisecond of each other. Measured on real terminals: between a tenth and a seventh of a millisecond, whichever way each terminal is driven.",
-        "**When one side of a waiting hedge is taken, the other now follows in about two seconds** instead of fourteen. Most of that fourteen was the application looking in the wrong place for its own order.",
-        "**The record says exactly when each order went.** Open a hedge and its history shows the moment each of the two orders left, so you can see for yourself that both sides went together rather than taking our word for it.",
-        "**A plan carries one hedge at a time.** That holds however the position arrives, including when you open it yourself in the terminal, and it counts every account the plan has held rather than only the current one. Two different plans still run their own hedges side by side, untouched by each other.",
-        "**A position you open yourself is hedged as it fills**, rather than up to thirty seconds later when the next pass came round.",
-        "**The calculator says why it will not arm.** Press Arm on a plan it cannot accept and the reason now appears and stays on the screen: which price is on the wrong side of which, or what about the machine is in the way. It used to leave the button exactly as it was and say nothing at all.",
-        "**Driving a terminal through its own Order window is reliable now.** Arming used to fail about every other attempt on a slow terminal, with a message that named no cause. Several other faults on that route were found and fixed at the same time: an order the market had taken being reported as a cancel that failed, a price the market crossed while the window was opening being refused with a message about a button, and closing a position taking five seconds where it now takes under two.",
-        "**A terminal you drive by hand is never sent an order.** That is what driving it by hand means, and the one place it could have happened is closed.",
-        "**A way of driving a terminal that could never work for that account is greyed out on the Sources page**, with the reason, instead of being accepted and refused later when you arm.",
-        "**When Windows refuses an action on a terminal, the hedge's row says what happened in words** rather than showing an error nobody can read.",
-        "**Part of a leg closing is no longer treated as the leg closing.** The hedge says what happened and leaves both positions where they are.",
-        "**Smaller things.** One terminal that cannot be read no longer stops the others being read, and the header no longer claims nothing has been read for days while it is reading. The list of terminals keeps up with what the application does to them. Choosing an instrument only one of your two accounts trades says so, instead of blaming the account. Terminals the application starts stay open when it closes, with your charts and your account where you left them. Closing a hedge from the strip is written down like every other order. And the calculator can be opened by address and its size suggestions reached from the keyboard."
-      ],
-      "release": "2.11.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-22T11:59:08.497196Z",
-  "release": "2.17.0",
-  "sha256": "05aed2e23dbc1050f322f55fc3da39337807036dd33dd609f4919b70b93d601b",
-  "signature": "_K9TZdihMNLwCdnSrMFczmgLVnKezuHKCGURowxkxFwZWwzqG-nQu2a6Umfifhj7xxnCw8YJGoRsZJLbbiw6Dg",
-  "size": 78908371,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.17.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-23T16:46:06.459522Z",
+  "release": "2.18.0",
+  "sha256": "629ad34297ccfd102d4e753fd20cbcbe468332b798e6193bfe776566202e89d2",
+  "signature": "PpbJOZKBVosR5TYcklkvY9Dcx4dg8XILRdj57b0YqGf6wQ9_IcyD-TvV5yAXpoYoXJ16_tgSyEl3a9Q9vXcvCw",
+  "size": 78993742,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.18.0/PropHedgeReports-Test-Setup.exe"
 }
