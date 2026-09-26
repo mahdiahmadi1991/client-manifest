@@ -3,6 +3,25 @@
   "notes": [
     {
       "lines": [
+        "The magic number on each leg can now be left empty, and a new setup starts with it empty. It used to be impossible to clear, and it began at a number nobody had chosen. MetaTrader reads an empty one as no magic, and nothing in the application needs one.",
+        "The four trailing stop rules now fit on the page, each explained on its own line. The fourth used to run off the edge of the card.",
+        "The two instrument lists in Settings are now tables of a fixed height that scroll inside themselves, so the page no longer grows with every instrument your accounts offer.",
+        "The broker's stop-out line now leaves the chart when the last position closes. It used to stay behind, showing a level worked out from positions that were no longer open.",
+        "A pending order you placed by hand can now be taken into a chain from the Positions tab, the same way as an open position. It stays exactly as you placed it until you level the chain. From then on it carries the chain's stop and target and is cancelled with the chain, and it joins the chain's average once it fills.",
+        "After a hedge fills, its stop and target now follow the fill a few seconds later, so the loss at the stop is the amount you confirmed. The lots never change, and nothing is sent when the fill moved by less than 1% of the stop distance. You can turn this off under Settings, Execution.",
+        "Moving or closing a hedge's leg no longer fails when the terminal's Toolbox is showing History or another tab. The application switches to the Trade tab for the action and then back to the tab you had open.",
+        "The switch under the Positions tab's buttons is no longer cut off at the bottom of the panel, and turning it on or off no longer says \"Not done\".",
+        "In the calculator, \"To lose\" is now the full distance to the firm's floor. On an account in profit that is more than the drawdown allowance, because the floor does not rise with profit.",
+        "When a plan cannot be armed, the calculator now says which terminal to log into and offers to switch to a plan that can be armed right away. The plan picker shows which plans are logged in, and a new login is noticed within seconds instead of half a minute.",
+        "The funded plan card shows your share of the profit as a ring. Its profit bar marks where a payout covers everything the plan has cost and where you withdraw, payout dates appear as dates instead of \"just now\", and the fee refund from the first payout is counted. The card asks for a payout only once the firm will pay it.",
+        "A funded plan now says a payout is worth asking for when your share of it, together with the fee refund the first payout brings, gives back 120% of everything the plan has cost so far. You can change the 120% under Settings, Sizing. A withdrawal goal you typed yourself is left as it is.",
+        "From the second position of a challenge, the hedge ratio the calculator suggests is based on what the hedging on that account has actually come to, whether the prop side is behind or ahead. It used to fall back to the stage budget when the prop side was ahead. And when the suggested ratio is more than your broker account can carry to the target, the calculator says so and how much more the broker account would need.",
+        "Trading days are now counted the way the firm counts them: only days on which a position was opened, so a position held for several days counts once. A challenge that reaches its target before its trading days are done no longer asks you to request the next account. It says how many days are left and to trade them at the smallest volume, which the firm allows."
+      ],
+      "release": "2.20.0"
+    },
+    {
+      "lines": [
         "A hedge is no longer closed because its terminal was logged into a different account. Adding an account to a terminal while a hedge was open used to close the other leg within seconds, and tell you that you had closed it yourself. Nothing is closed now, firing is refused while a terminal is showing another account, and the hedge's row names the account to log back into. Separately, one hedge that cannot be read no longer stops the rest being watched: with two challenges running, a single terminal misbehaving used to leave the other hedge unguarded and say nothing about it.",
         "A hedge whose terminal has been logged into another account now raises a window you cannot close, on whatever page you are on, naming the account to log back into, and it sounds an alarm when it appears. Log that account back in and the window goes by itself. If the account is not coming back, the window will close the leg on the terminal that still answers.",
         "The hedge ratio the calculator suggests now counts every position on the challenge account, including the ones no broker trade ever answered. A trade you took on the prop side alone still moves the account towards its floor, so leaving it out asked the broker side to give back more than it had to: on one real account the suggestion falls from 12.93% to 8.87%. The figures beside it say which money each one is, and the hedge detail page no longer adds a prop dollar to a broker dollar.",
@@ -121,20 +140,13 @@
         "**Two things on the hedge ledger.** A column filter works every time rather than only the first: choosing a second account after a first found nothing used to find nothing either, and clearing the filter did not bring the whole ledger back. And in a narrow window the first column no longer has its text cut in half when you scroll sideways."
       ],
       "release": "2.13.0"
-    },
-    {
-      "lines": [
-        "**Instruments whose name carries a longer tag are recognised again.** Some brokers add a word to the end of a symbol rather than a letter or two: IFC Markets writes gold `XAUUSD.BOOK`. The application read a tag of one or two characters and not a word, so on those accounts every trade under the name was skipped. There were no positions, no hedges, and the calculator offered no instruments and said no prop account had been read, on an account whose balance was on the screen beside it. Nothing was lost while that was happening: your trades were still recorded, and they come back with everything built on them the first time this version reads your terminal.",
-        "**And where a name genuinely cannot be placed, the calculator says so.** It used to send you to add a MetaTrader terminal, which is no help when the terminal is running and the account is read. It now tells you what happened and points at Settings, Catalogues, where you can say what the name means. One answer there settles every trade under it."
-      ],
-      "release": "2.12.1"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-23T23:27:51.829809Z",
-  "release": "2.19.0",
-  "sha256": "99caa4c7c6df78c240242cbe0192c43769a97f33e4ae06ff1d76653b25d4e879",
-  "signature": "wf-BlJxlGgA3FhNlg9h09S9-L9jtrBMhsGNlBNeETyhT4laTO5-Rl4j4pfscOlpYSmZUQEhowluFbcZ-BlP-BQ",
-  "size": 78998185,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.19.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-09-26T07:53:14.866728Z",
+  "release": "2.20.0",
+  "sha256": "7ce6466e705d0ad81399e50b11deac55cdecd1610fd7b2e23c52323f2c29c67e",
+  "signature": "Oivas_rW_aFQVhJQbKdRGmkbEyO7wcIABJ2q8IVxGaKOf-2LfUapXsA0V67KjPzggWZKuSeobdUEe3_f6ENwBg",
+  "size": 79030118,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.20.0/PropHedgeReports-Setup.exe"
 }
