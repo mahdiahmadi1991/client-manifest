@@ -3,6 +3,28 @@
   "notes": [
     {
       "lines": [
+        "There is a new News page. It shows MetaTrader's economic calendar with MetaQuotes' forecasts, the actual figures and the day of the week. It warns you before a release that moves what you trade, opens a window before one that moves a position you have open, and tells you when the market moves with no news scheduled.",
+        "For each release, the News page says what a figure above or below the forecast usually does to gold, or to whichever instrument you follow. It takes this from written rules where there are any and from your terminal's own history where there are not, and says how often it has held on your terminal.",
+        "When a figure comes out, the release stays at the top of the News page for fifteen minutes, with how far the instrument has moved since.",
+        "The News page, and a new News card on the Overview, show today's market hours on a timeline from midnight to midnight. The Sydney, Tokyo, London and New York sessions each have their own row and colour, another row names the hours when they overlap, and the timeline also shows when each instrument you follow trades at your broker and when your releases are due.",
+        "When you move the mouse over the timeline, a line follows it with the exact time and a card says what is open at that minute.",
+        "High-importance releases are shown in red and moderate ones in orange. Every instrument, currency and trading region on the News page carries its logo or flag.",
+        "The application now checks this computer's clock against the internet. If the clock is more than thirty seconds out, it asks you to set it right, because the time of every trade is measured against it.",
+        "The Fire window now shows the warnings the Arm check raises, such as a market session about to close.",
+        "\"Keep them open\" in the market-closing window no longer reports a failure after it worked.",
+        "With the lots locked and the stop free, typing or dragging the risk now moves the stop to where those lots lose that much, never more. With both locked, the risk is shown as a readout that tells you which padlock to open. The stop and target boxes also keep every decimal the instrument quotes.",
+        "On a funded plan the calculator can now size and place a prop position with no broker leg. Its target sits at a reward to risk of 0.2 by default, and the risk starts at 98% of what the account may risk. The application records the position as your own trade rather than a hedge and, like a hedge, closes it before the market shuts.",
+        "The calculator now estimates commission for each instrument from what that instrument has actually been charged. It used to use one average across everything the account traded, which on bitcoin understated the cost about fourteen times.",
+        "The calculator answers faster, most of all on a record with many prop accounts. While it works out a new answer, the figures fade and a thin line runs along the top until the new ones arrive.",
+        "The figures on screen keep up with the terminals when some of the terminals you added are closed. The last-read time in the header, the floating result of an open hedge and the calculator's one-hedge-per-plan check all update as the terminals are read, and the running terminals are read at the interval you set.",
+        "The clock in the header now ticks every second instead of jumping every few seconds.",
+        "On a slower computer, pages no longer say \"The local reporting service is unavailable\" while the service is starting. They wait, keep what they already show, and fill in by themselves.",
+        "Before every update the application keeps a copy of your data, now also when the update is installed as the application starts. It keeps the three most recent copies instead of the oldest ones."
+      ],
+      "release": "2.21.0"
+    },
+    {
+      "lines": [
         "The magic number on each leg can now be left empty, and a new setup starts with it empty. It used to be impossible to clear, and it began at a number nobody had chosen. MetaTrader reads an empty one as no magic, and nothing in the application needs one.",
         "The four trailing stop rules now fit on the page, each explained on its own line. The fourth used to run off the edge of the card.",
         "The two instrument lists in Settings are now tables of a fixed height that scroll inside themselves, so the page no longer grows with every instrument your accounts offer.",
@@ -119,34 +141,13 @@
         "**The licence is confirmed about every six hours.** After a day without reaching the internet the application says so, instead of after three weeks; if it cannot reach the licence list for two days it locks, and connecting once clears it. A licence can now be issued for a set number of days: when one runs out the application says so on a screen of its own, with the day it ran until, and a licence with a week or less to run says so while you can still do something about it. Your figures and both exports are never affected, and licences issued before this release run until 30 September 2026."
       ],
       "release": "2.14.0"
-    },
-    {
-      "lines": [
-        "**On a funded account, the profit you have made is now valued at the share a payout pays you** rather than at what the challenge allowance cost. A winning funded hedge was being reported as a loss: one worth $297.12 on the prop side against $98.64 at the broker read as -$52.21, and it is +$124.20. The share follows your plan's ladder, so a second funded account is valued at the rate the firm actually pays on it. The break-even ratio is unchanged and still means what it says, and the figure a payout is measured against now follows what reaching the account has cost instead of staying at whatever it was the day the account arrived.",
-        "**The desk on your chart has tabs now, and one of them lists what is open.** Positions shows every position on the instrument with its stop, its size and what it is worth, and lets you take one into the chain or release it without touching the others. Settings holds the rest: the theme, the colours, and which way the trailing stop follows.",
-        "**The desk draws the chart's lines itself.** You can drag the chain's stop and its target the way you drag anything else, and a position you gave a level of its own gets a line of its own with its ticket on it. Each line says what reaching it is worth: the money, the share of the balance, the distance in points, and what the chain stands to make against what it risks. The area between the stop and the target is shaded, so you can see both at a glance. Dragging on the average line starts a new line instead of moving the average, dragging a waiting entry no longer moves a position's stop that happens to sit at the same price, and the figures keep up when you move the chart.",
-        "**A stop or target you set yourself is kept.** On every position in the chain, and on the ones you open afterwards. A position you closed by hand now counts as part of what the chain has banked, so the average line moves by what you took off and the bar shows it beside your open result.",
-        "**You can size a trade by what you are willing to lose.** The desk's volume box takes lots, a share of the balance, or an amount of money, and always shows the lots it comes to.",
-        "**The trailing stop keeps running after the price reaches your target.** The target moves ahead with the trade instead of closing it, and the stop is what ends the trade. There is also a second way to trail, which follows the chart's own range below the highest bar rather than sitting a spread behind the best price. You choose between them on the desk's Settings tab.",
-        "**The desk sets your chart up when it loads, and gives it back when it comes off.** What the chart shows, candles, the newest bar at the middle of the screen, and a vertical scale you can drag instead of one that springs back. Settings has a button to do it again, and a dark or a light theme for the chart. With a theme on, the desk wears colours made for it: its border is the chart's grid, its text the chart's own, and its green and red the candles'. Turn the theme off and your usual colours come back, exactly as they were.",
-        "**Your desk settings survive an expert update**, the panel stays above anything drawn on the chart, and its box and lines are readable on a dark chart.",
-        "**Setting a terminal up no longer leaves the desk unable to talk to the product.** The settings file it saved was written in a way that sent the desk looking for a connection that does not exist.",
-        "**The expert is asked for where it is used.** A hedge whose prop leg you open yourself no longer asks you to attach TradeDesk in the prop terminal. It is always needed in the broker terminal, where it guards the leg even if the product stops running, and in the prop terminal only when the product places that leg through it.",
-        "**The calculator says what a trade costs to get into, in your own money.** The broker's charges in full, and the prop account's at the ratio the two legs actually trade at, because winning a prop dollar back costs you that much. A funded account still counts the whole charge.",
-        "**The calculator shows which way the trade goes.** The side is in the colour of the header, the footer and the Arm button, so a hedge set up the wrong way round is visible before it is armed. The figures carry colour where it means something as well: each leg's side, the hedge ratio, money that is a gain or a loss, and the stop and target boxes.",
-        "**The calculator's entry field works again, and lines up.** NOW and the follow button do something when pressed, and they stay put when the up and down arrows appear beside them. Typing a new entry price moves the stop and a target you typed with it and keeps the distances, where before an entry typed past the stop left the trade with no stop at all. The field lines up with the stop and the target, those two labels are red and green again, and gold is marked as the recommended instrument in the picker and listed first among the ones both terminals watch.",
-        "**A leg left standing on its own is closed.** If one side of a hedge cannot be opened, the side that did open comes off immediately instead of being left there alone. A position you opened by hand is never closed this way.",
-        "**Arming warns you when a market is about to close**, an hour before by default and adjustable in Settings. Refusing inside the last fifteen minutes is unchanged. The terminals are read every fifteen seconds now, and every five while a position is open, both on the Settings page.",
-        "**Two things on the hedge ledger.** A column filter works every time rather than only the first: choosing a second account after a first found nothing used to find nothing either, and clearing the filter did not bring the whole ledger back. And in a narrow window the first column no longer has its text cut in half when you scroll sideways."
-      ],
-      "release": "2.13.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-09-26T07:49:53.500013Z",
-  "release": "2.20.0",
-  "sha256": "72480cc8d5e118ba95f972f296bef2647be4a2207b751302c5f7a7af1ce3b935",
-  "signature": "9oXPX9hcyVqlAo1JHGbvn-9irSAWczeWS5LdYYliAhiw6iOVXJM0FhjhT_63lZBOlLAAt0ecgr1mGWmSGJQJCQ",
-  "size": 79034747,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.20.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-09-27T20:55:20.051771Z",
+  "release": "2.21.0",
+  "sha256": "2706e42a8885e2eb0f14022b05ad8f7ff57c8120d111b6d7a470bf3610d838d2",
+  "signature": "I-f77aoiv76qQuoe9kbIq3pASHiJwweIY2tAjdr841SQlqn53x2zXAK_f_JCEDp3vhDczDF5n2wqvqhSx9zfBw",
+  "size": 79916792,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.21.0/PropHedgeReports-Test-Setup.exe"
 }
