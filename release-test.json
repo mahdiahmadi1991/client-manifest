@@ -3,6 +3,22 @@
   "notes": [
     {
       "lines": [
+        "The application now opens on Today. It lists what only you can do today across every plan, how much of each account's room for the day is left, what the firm owes you and what falls due soon. It also shows how each recent day used its room, and how many trading days each plan has to its floor, at full use and at your pace.",
+        "Windows notifications now tell you when a plan burns or is ready for its next account, when money is waiting for you, when a deadline is near, and an hour before the day's room runs out.",
+        "A plan's card draws its path in boxes. The challenges stand in one row, each with its dates, result, trading days and money, and the funded accounts have a lane of their own below. The account being traded opens inside its own box with the firm's rules on it: what one position may risk, what is left today and to the floor, the trading days and the payout's date, each turning amber near its limit. A lane under the path marks the dates ahead.",
+        "Arm now keeps the firm's hard rules. Once you say you have asked for a payout, nothing opens on that plan until it arrives. A challenge past its target takes only the smallest volume while trading days are still owed. No order starts inside the firm's weekend, and a position on an instrument that trades through it, such as crypto, is closed before it begins. The calculator says which rule holds before you press, and both keep a small margin inside the firm's limits: 0.2% of the balance unless you change it under Sizing a hedge in Settings.",
+        "ProopCo plans follow the firm's own published rules: each family's drawdown and timing rules, trading days counted without weekends, payout dates and the split set by the payout option you bought, and the price refunded from the third payout. A Flex account's daily floor rises with the day's profit, as ProopCo measures it. Proop ONE can now be recorded, and reading a real account's payout no longer fails once it has traded.",
+        "On a real ProopCo Economy account, a position may risk 2% of the balance and Arm waits five minutes after one closes. The calculator warns when one symbol's run would bring more than 80% of the target. A plan's last challenge waits when its real account would take you over the firm's cap on real accounts, counting only the accounts of the person the plan belongs to.",
+        "The calculator's Buy and Sell now show how often each side reached your target before your stop, measured on the prop terminal's own history, on the one-minute timeframe unless you choose another in Settings. A star marks the side the figures favour for your goal, and the panel behind the i shows how past trades like yours ended and how much of any gap chance alone would give.",
+        "A note on a plan can be styled with bold, italic, a highlight and lists. Notes you wrote before read exactly as they did, and the pin in the calculator opens every pinned note in full.",
+        "The application has a dark theme. It follows Windows unless you choose light or dark in Settings, and every screen was checked for readability in it.",
+        "An eye in the header hides every amount of money and every account number, on every screen and in notifications, until you press it again. Prices, lots and percentages stay, and the Excel export and journals keep the real figures.",
+        "Screen readers now name every field on the Settings page."
+      ],
+      "release": "2.24.0"
+    },
+    {
+      "lines": [
         "The Overview opens on your own money: the cash you have actually made. Beside it, when there is any, are what a funded account holds for you after the split, what your open hedges are floating, and what is left after your running costs. Below it are your earnings over time and four links, to Plans, Hedges, Cash and Costs. Figures that added the prop account's result to your broker money are gone.",
         "Everything about one plan has moved onto that plan's card, into a Details row that stays folded until you open it. Its tabs show what each account earned, how each challenge moved, the plan's own payments and how its hedges went.",
         "Cash and Costs are new pages in the sidebar. Cash lists every fee, refund and payout, and your own trading at the brokers. Costs shows what trading cost you in commission, swap, fees and spread, and what you paid for accounts.",
@@ -158,20 +174,13 @@
         "**Four things about the shared journal that went wrong and no longer do.** Taking a copy failed while the product was reading your terminals. A change being read at the moment its file moved was skipped instead of read again on the next look. A computer switched off for a long time started again from scratch on every look once it came back, rather than once. And changing the passphrase sent your whole record to Drive a second time. Times on that page are shown in your own clock too, matching the rest of the product."
       ],
       "release": "2.15.0"
-    },
-    {
-      "lines": [
-        "**The application installs and runs again on older computers.** A library that arrives with the MetaTrader package had raised what it needs to an instruction set no processor before 2008 has, so on an older machine the installation finished and the application then refused to start, every time, with a message blaming something that was not the problem. It is back to what it has always needed, which every 64-bit computer since 2004 has. The same applies to a virtual machine whose host presents an older processor.",
-        "**If a computer really is too old for it, the installer says so before it installs anything** rather than leaving you with a copy that cannot start, and it says what to change when the machine is a virtual one."
-      ],
-      "release": "2.14.2"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-10-01T18:12:58.402094Z",
-  "release": "2.23.0",
-  "sha256": "5741fdf2ec1d6303b197a6b5ecaa5363e2f64aa851a208bb914d244b59f22102",
-  "signature": "8gh7fgWZai7TvOtBNryB31aJpKvZ0ojQ4O0SyQoSQa09Mu6dI0c5AdCby5I0t1Pd4c7fLiEyPIQ3IojJk3iWDg",
-  "size": 80011864,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.23.0/PropHedgeReports-Test-Setup.exe"
+  "published_at": "2026-10-04T21:20:59.776180Z",
+  "release": "2.24.0",
+  "sha256": "4dc6f8be503cc4c266bcd178eea10991164c4c00b5e642d361e429160b333c39",
+  "signature": "8ZMgcfWyHZfFfuTXNUTNs4_MDYnMEQ9niREkZHxpjefkEcjk6fW8TDmuyaj9NWaWhH1IXcvnB-IjQimcffZzDg",
+  "size": 80383300,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.24.0/PropHedgeReports-Test-Setup.exe"
 }
