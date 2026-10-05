@@ -3,6 +3,19 @@
   "notes": [
     {
       "lines": [
+        "Today tells you what to do on each running account. For an account short of its goal, it asks you to trade it your own way and shows the day's room and the most one position may risk. Once the goal is reached (a challenge's target, or Withdraw at on a real account), it asks only for the smallest position your broker allows, and only while trading days are still owed.",
+        "Under each account, Today shows what comes next: the odds of reaching the goal before the floor, and what to do either way, such as asking for the next stage if the challenge passes, or the plan to buy if it fails. When today's position can decide the plan, Today says so and measures, on the terminal's own history, how often a buy or a sell of your last position's size would have reached the goal first.",
+        "A real account that has not traded since it was funded has its room for the day again, on Today, on its plan and in the calculator. An account that has never traded counts its days without a trade from the day it arrived, so its last day to trade shows as well.",
+        "Today no longer asks you to buy accounts past the firm's limit on how many you may hold at once, and a room whose figures cannot be worked out shows as not known instead of $0.",
+        "The record on Today shows each plan once a day, and the days a passed challenge waits for its next account no longer count as days you left untouched.",
+        "Not today on an account close to the firm's limit of days without a trade puts the day away in one press.",
+        "The calculator's star on Buy or Sell is filled only when the gap between the two holds up across whole days of history. Otherwise it is open and dashed, which means that side only leans, and its sentence says how much chance alone could move the gap.",
+        "The calculator groups the digits of a very large ceiling, and the figure beside a target says what it sets aside for costs. A target you type in yourself sets nothing aside, so it shows no figure."
+      ],
+      "release": "2.25.0"
+    },
+    {
+      "lines": [
         "The application now opens on Today. It lists what only you can do today across every plan, how much of each account's room for the day is left, what the firm owes you and what falls due soon. It also shows how each recent day used its room, and how many trading days each plan has to its floor, at full use and at your pace.",
         "Windows notifications now tell you when a plan burns or is ready for its next account, when money is waiting for you, when a deadline is near, and an hour before the day's room runs out.",
         "A plan's card draws its path in boxes. The challenges stand in one row, each with its dates, result, trading days and money, and the funded accounts have a lane of their own below. The account being traded opens inside its own box with the firm's rules on it: what one position may risk, what is left today and to the floor, the trading days and the payout's date, each turning amber near its limit. A lane under the path marks the dates ahead.",
@@ -159,28 +172,13 @@
         "The risk figure under the calculator's rail is what the position really risks, not what the sizing was asked for. The two come apart whenever you set the lots by hand, and the figure turns red when it is past what your plan allows. Moving a level on one leg now carries only what you choose. A stop still moves the other leg's target and a target moves nothing, so trailing a broker target by hand no longer moves your prop stop. Four switches for it under Settings, Driving the terminals. The calculator also opens with the entry following the market."
       ],
       "release": "2.16.0"
-    },
-    {
-      "lines": [
-        "**One journal on every computer you trade from.** Turn it on in Settings, Journals, and your record is kept the same on each machine through a hidden folder in your own Google Drive. It is sealed with a passphrase only you know: nobody here ever sees it and nobody can recover it. Each machine still reads only its own terminals, and nothing about you or your machines reaches us. The page says which Google account the copy goes to and how much room that account has left, so a Drive that is filling up is something you hear about before it stops the copy rather than after.",
-        "**When two of your computers change the same thing, you decide which is right.** Both versions are kept and the question is put to you; neither is thrown away on its own. Your answer then reaches every machine rather than only the one you gave it on. A computer that already holds a record of its own can join and keep it, and whatever only that one had is carried across. Sources lists the machines sharing the journal, what each is running and when it last spoke. One that is gone for good can be forgotten. The header says how it stands and speaks only when something needs you: a computer you have switched off is not a warning, and the Journals page says which of them has not caught up yet.",
-        "**Hedging from two computers at once is now safe.** Arming checks your other machines first, so two of them can never hedge the same plan, and the refusal says which one got there first. The checks count what those machines already have at risk on the same accounts, so two of them cannot between them break the firm's daily limit or close each other's hedge out. A hedge belongs to the machine that armed it: only that machine can fire it, move it or close it, and the others show it with that machine's name beside it. Stopping automatic actions stops them everywhere, and the status says where it was stopped from.",
-        "**The trailing stop is the desk expert's now, and it is off until you turn it on.** Four rules to choose from in Settings. It follows the broker leg only, so nothing is ever moved on a prop account, and the shadow stop that used to close a leg early is gone. What each rule did on eight months of real bars is written down rather than guessed at.",
-        "**Every screen that reports a hedge separates what you chose from what it cost.** Leaving one leg running after its partner closed is a decision, and it is now reported as one instead of arriving as a cost you never paid. It is told apart from an accidental parting on evidence: a stop or target seen to move before the other leg closed, or a gap wider than your own review threshold. Reports say whether running on has paid you: how often you did it, how often it worked, what it earned against what it gave back, and how much of what was on the table you kept. Every position now records the best it was ever worth while it was open, which is what that last figure is measured against.",
-        "**Slippage is measured against the price the order actually asked for.** A close triggered by a stop, a target or a stop out is the one fill in this product with a requested price to compare against, so it is exact rather than an estimate. The levels come from the order rather than the deal, which is where they have always been; the fifty-six entry levels this product had stored as zero were read from the wrong record.",
-        "**The hedges page counts every settled hedge.** It counted only the ones nobody had left a question on, so a closed hedge waiting to be read through was missing from the page's own total while every other screen included it. Money that was earned weeks ago no longer appears the day somebody presses Accept.",
-        "**An instrument your terminal is not watching is no longer armed against.** It has no price and no stop rules there, and those zeros used to read as permission. The product now puts the instrument into Market Watch itself where the desk expert is attached, says so on the arming checks when it does, and asks you to add it by hand where no expert is there to do it.",
-        "**The accounts table says who each account is registered to**, and Accounts, Hedges and Plans can be narrowed to one person's accounts. The name stays on your own machines and is never in a journal you export.",
-        "**Four things about the shared journal that went wrong and no longer do.** Taking a copy failed while the product was reading your terminals. A change being read at the moment its file moved was skipped instead of read again on the next look. A computer switched off for a long time started again from scratch on every look once it came back, rather than once. And changing the passphrase sent your whole record to Drive a second time. Times on that page are shown in your own clock too, matching the rest of the product."
-      ],
-      "release": "2.15.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-10-04T21:21:43.594372Z",
-  "release": "2.24.0",
-  "sha256": "07e37f00ece07a2459d8861ae233c1d4c91cf6a8a882a9de390ef132b9ca0449",
-  "signature": "0dnVaZI_8AhrsTQFlkDwfmX8rJ7W2D-xFft_IyTSou9uYVz5ERj9y1TMOJkR6kyHmpOUa5Hx8rKV005y3_OYBQ",
-  "size": 80362670,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.24.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-10-05T02:36:32.953696Z",
+  "release": "2.25.0",
+  "sha256": "fee69678c10fd708dc5489e7bbb96b801b2354a78232bce1b0bb4fd88a1dd1b9",
+  "signature": "Yvi_ujXZekLDNNTWMiPtbzeM_X5zDimASfvpLbuVDeUKzCtHWk6fdPB-m1zLvNa1Nnc3u2thNbKB9TiOn3EFAg",
+  "size": 80384106,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.25.0/PropHedgeReports-Setup.exe"
 }
