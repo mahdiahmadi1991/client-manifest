@@ -3,6 +3,14 @@
   "notes": [
     {
       "lines": [
+        "When the plan's account is saved in a terminal that is logged into another account, the calculator offers Log into beside Arm. One press logs that terminal into the plan's account through the terminal's own Login window, with the password the terminal saved, and without restarting it. The product never sees or types the password.",
+        "If the account the terminal shows has open positions or orders, the calculator asks once more before it switches, because that terminal will not show them until you log back. If the terminal has no saved password for the account, or its server asks for a one-time password, the Login window opens ready for you to finish.",
+        "Log into does not appear while the account the terminal shows carries a running hedge, or when the terminal runs the desk and the plan's account is on another broker's server, where the desk cannot start. The bar says why instead. If the account is already open in another terminal, the press says so and changes nothing."
+      ],
+      "release": "2.26.0"
+    },
+    {
+      "lines": [
         "Today tells you what to do on each running account. For an account short of its goal, it asks you to trade it your own way and shows the day's room and the most one position may risk. Once the goal is reached (a challenge's target, or Withdraw at on a real account), it asks only for the smallest position your broker allows, and only while trading days are still owed.",
         "Under each account, Today shows what comes next: the odds of reaching the goal before the floor, and what to do either way, such as asking for the next stage if the challenge passes, or the plan to buy if it fails. When today's position can decide the plan, Today says so and measures, on the terminal's own history, how often a buy or a sell of your last position's size would have reached the goal first.",
         "A real account that has not traded since it was funded has its room for the day again, on Today, on its plan and in the calculator. An account that has never traded counts its days without a trade from the day it arrived, so its last day to trade shows as well.",
@@ -153,32 +161,13 @@
         "Positions with no counterpart and an account's ledger fill as you scroll rather than putting you through numbered pages, and Positions with no counterpart can be narrowed to one account."
       ],
       "release": "2.17.0"
-    },
-    {
-      "lines": [
-        "A licence that runs out while a hedge is open no longer locks you out of it. You can still see what is open, close it, disarm it, or cancel an order that is waiting.",
-        "You can enter a new licence key from the About page before the old one expires. It tells you what that key covers before you use it.",
-        "Record what you pay to run this, starting with your licence. You choose whether it comes off your result as a step of its own.",
-        "A target at the pass point clears what the trade really costs to open and close. It used to allow for one commission where two are charged, and for none at all on an account that had not traded yet.",
-        "Switching a trade between buy and sell moves the stop and the target to the right side of the entry. They used to stay where they were, which swapped what each one meant.",
-        "The Hedges page narrows to one prop account.",
-        "A terminal you make appears on the Terminals tab straight away. You can also correct what a plan cost after recording it.",
-        "The product refuses to arm while the plan already holds a position, including one you opened yourself in MetaTrader. The wait before firing counts down where you can see it, you can cancel it, and the calculator is locked once a hedge is armed.",
-        "A plan shows what is standing on its funded accounts, and your share of it after the split, beside what the plan has cost you. A plan that reads down while its account is up now says why.",
-        "One terminal that stops answering no longer holds up the others. A terminal the product cannot read says why, rather than quietly slowing everything down.",
-        "When a terminal changes account, the product notices and points itself at the new one within half a minute. It used to go on driving the old one. Every failing check that a restart can clear now offers the button that does it, and a terminal the product starts comes back the way it was running.",
-        "The badge in the corner counts the terminals actually being driven, not the ones with a route chosen. A terminal driven through its own windows can now be started and set up from its row, which until now only a terminal on the expert route could. An account's bar carries its balance on the marker, and puts each distance under the end it is measured to.",
-        "The hedge ratio counts what the broker has already taken in on a stage as money that stage can spend. It holds at the price you named, rather than falling every time the account loses: on a $25,000 Class B with $350 set aside for the stage, one hedge was enough to drop the suggestion from 14.00% to 10.99%.",
-        "The risk figure under the calculator's rail is what the position really risks, not what the sizing was asked for. The two come apart whenever you set the lots by hand, and the figure turns red when it is past what your plan allows. Moving a level on one leg now carries only what you choose. A stop still moves the other leg's target and a target moves nothing, so trailing a broker target by hand no longer moves your prop stop. Four switches for it under Settings, Driving the terminals. The calculator also opens with the entry following the market."
-      ],
-      "release": "2.16.0"
     }
   ],
   "payload_version": 1,
-  "published_at": "2026-10-05T02:36:32.953696Z",
-  "release": "2.25.0",
-  "sha256": "fee69678c10fd708dc5489e7bbb96b801b2354a78232bce1b0bb4fd88a1dd1b9",
-  "signature": "Yvi_ujXZekLDNNTWMiPtbzeM_X5zDimASfvpLbuVDeUKzCtHWk6fdPB-m1zLvNa1Nnc3u2thNbKB9TiOn3EFAg",
-  "size": 80384106,
-  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.25.0/PropHedgeReports-Setup.exe"
+  "published_at": "2026-10-06T18:52:27.301554Z",
+  "release": "2.26.0",
+  "sha256": "e13e907ea4eeedbf18633a78972ec46326e4ff31ddca3948e2418c500fa8e4dc",
+  "signature": "KNWGFJ5cSRdAasTwAeEu2UuXqvQDIMfIj2tsbVIaPg6mlyB2ZeK0VTpREtja8DdpyOLkSEWBM4D3c3Oix_b_AA",
+  "size": 80408210,
+  "url": "https://github.com/AlynGo-Org/execution-ledger-releases/releases/download/v2.26.0/PropHedgeReports-Setup.exe"
 }
